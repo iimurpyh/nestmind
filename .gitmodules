@@ -1,0 +1,3 @@
+[submodule "ss-data"]
+	path = ss-data
+	url = https://github.com/hail12pink/ss-data.git
