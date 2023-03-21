@@ -57,12 +57,18 @@ function getArticleEmbed(i, page) {
 
     const articleEmbed = new EmbedBuilder().setTitle(title);
 
+    var credits
     if (data && data.Price) {
-        subtitle += " | " + data.Price + " Credits";
+        credits = data.Price;
     } else if (data && data.Value) {
-        subtitle += " | " + data.Value + " Credits";
+        credits = data.Value;
     }
-
+    if (credits == 1) {
+        subtitle += " | " + credits + " Credit"
+    } else if (credits) {
+        subtitle += " | " + credits + " Credits"
+    }
+    
     var finalText = text;
     
 
@@ -146,7 +152,13 @@ module.exports = {
 
 
     onRun: async (client, interaction) => {
-        const article = interaction.options.getString('article').toLowerCase();
+        var article;
+        if (interaction.options) {
+            article = interaction.options.getString('article').toLowerCase();
+        } else {
+            article = interaction.content.split(" ")[1];
+        }
+        
         for (let i in datalinks) {
             if (i.toLowerCase() == article) {
                 var [embed, hasPages] = getArticleEmbed(i, 0);
@@ -168,9 +180,11 @@ module.exports = {
                 } else {
                     await interaction.reply({ embeds: [embed] });
                 }
+                return;
                 
             }
         }
+        await interaction.reply("Article not found.")
     },
 
     onButton: async (client, interaction) => {

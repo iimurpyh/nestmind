@@ -39,7 +39,16 @@ client.on(Events.MessageCreate, async message => {
             var cmd = commands[i];
             for (var e in cmd.aliases) {
                 if (message.content.startsWith(PREFIX + cmd.aliases[e]) == true) {
-                    cmd.onRun(client, message);
+                    try {
+                        await cmd.onRun(message.client, message);
+                    } catch (error) {
+                        console.error(error);
+                        if (message.replied || message.deferred) {
+                            await message.followUp({ content: 'There was an error while executing this command.', ephemeral: true });
+                        } else {
+                            await message.reply({ content: 'There was an error while executing this command.', ephemeral: true });
+                        }
+                    }
                 }
             }
         }
