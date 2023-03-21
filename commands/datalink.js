@@ -156,7 +156,7 @@ module.exports = {
         if (interaction.options) {
             article = interaction.options.getString('article').toLowerCase();
         } else {
-            article = interaction.content.split(" ")[1];
+            article = interaction.content.split(" ")[1].toLowerCase();
         }
         
         for (let i in datalinks) {
