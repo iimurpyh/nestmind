@@ -1,3 +1,4 @@
+console.log(require('discord.js').version)
 // Require the necessary discord.js classes
 const { Client, Collection, Events, GatewayIntentBits, SlashCommandBuilder } = require('discord.js');
 const { token } = require('./config.json');
