@@ -38,7 +38,7 @@ module.exports = {
             await interaction.reply("This command can only be used in the Scarlet Skies discord server.");
             return;
         }
-        if (interaction.userId === lastUsedId) {
+        if (interaction.user.id == lastUsedId) {
             await interaction.reply("This command can't be used by the person who sent the last vote request.");
             return;
         }
@@ -63,7 +63,8 @@ module.exports = {
                 embed.setDescription(arguments[1]);
             }
             interaction.guild.channels.cache.find(channel => channel.name === "event-voting").send({content: `${voting ? `${voting}` : "(Role not found. Any role with the name Voting will work.)"}\n`, embeds: [embed]});
-            lastUsedId = interaction.userId
+            
+            lastUsedId = interaction.user.id ?? interaction.author.id
             await interaction.reply("Message sent.");
         }
     }

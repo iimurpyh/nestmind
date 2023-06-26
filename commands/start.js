@@ -33,7 +33,7 @@ module.exports = {
     ],
 
     onRun: async (client, interaction, arguments, isTextCommand) => {
-        if (interaction.guildId != 1059603807811682335 ) { //  && interaction.guildId != 818267620821696563
+        if (interaction.guildId != 1059603807811682335 && interaction.guildId != 818267620821696563) { 
             await interaction.reply("This command can only be used in the Scarlet Skies discord server.");
             return;
         }
