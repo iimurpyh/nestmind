@@ -41,7 +41,49 @@ client.on(Events.MessageCreate, async message => {
             for (var e in cmd.aliases) {
                 if (message.content.startsWith(PREFIX + cmd.aliases[e]) == true) {
                     try {
-                        await cmd.onRun(message.client, message);
+                        var arguments = [];
+                        var pos = 0;
+                        for (var n in cmd.options) {
+                            var option = cmd.options[n]
+                            if (option.type == "oneWordString") {
+                                var start = message.content.indexOf(" ", pos);
+                                var end = message.content.indexOf(" ", start+1);
+                                var str
+                                if (end == -1) {
+                                    str = message.content.substring(start+1);
+                                } else {
+                                    str = message.content.substring(start+1, end);
+                                }
+                                if (option.choices) {
+                                    if (option.choices.find(s => s == str.toLowerCase())) {
+                                        arguments.push(str);
+                                    } else {
+                                        if (message.replied || message.deferred) {
+                                            await message.followUp({ content: 'Invalid argument for "' + option.name + '" field.', ephemeral: true });
+                                        } else {
+                                            await message.reply({ content: 'Invalid argument for "' + option.name + '" field.', ephemeral: true });
+                                        }
+                                        return;
+                                    }
+                                } else {
+                                    arguments.push(str);
+                                }
+                                if (end >= 0) {
+                                    pos = end+1;
+                                } else {
+                                    pos = -1;
+                                }
+                                
+                            } else if (option.type == "string") {
+                                if (pos >= 0) {
+                                    arguments.push(message.content.substring(pos));
+                                } else {
+                                    arguments.push(" ");
+                                }
+                                
+                            }
+                        }
+                        await cmd.onRun(message.client, message, arguments, true);
                     } catch (error) {
                         console.error(error);
                         if (message.replied || message.deferred) {
@@ -67,7 +109,16 @@ client.on(Events.InteractionCreate, async interaction => {
     }
     
     try {
-        await command.onRun(interaction.client, interaction);
+        var arguments = [];
+        for (var n in command.options) {
+            var option = command.options[n]
+            if (option.type == "oneWordString") {
+                arguments.push(interaction.options.getString(option.name));
+            } else if (option.type == "string") {
+                arguments.push(interaction.options.getString(option.name));
+            }
+        }
+        await command.onRun(interaction.client, interaction, arguments, false);
     } catch (error) {
         console.error(error);
         if (interaction.replied || interaction.deferred) {

@@ -151,12 +151,12 @@ module.exports = {
     ],
 
 
-    onRun: async (client, interaction) => {
-        var article;
-        if (interaction.options) {
-            article = interaction.options.getString('article').toLowerCase();
-        } else {
-            article = interaction.content.split(" ")[1].toLowerCase();
+    onRun: async (client, interaction, arguments) => {
+        article = arguments[0];
+
+        if (!article) {
+            await interaction.reply("You have to include the name of an article. Use the list command to see the available options.");
+            return;
         }
         
         for (let i in datalinks) {
