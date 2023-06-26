@@ -55,12 +55,10 @@ module.exports = {
             const embed = new EmbedBuilder().setTitle(fancyNames.get(arguments[0]) + " has begun!")
                 .setAuthor({ name: interaction.member.displayName + " (" + user.username + ")", iconURL: user.avatarURL() });
             if (arguments[1]) {
-                embed.setDescription(`${events ? `${events}` : "(Role not found. Any role with the name Events will work.)"}\n` + arguments[1]);
-            } else {
-                embed.setDescription(`${events ? `${events}` : "(Role not found. Any role with the name Events will work.)"}\n`)
+                embed.setDescription(arguments[1]);
             }
             embed.setFooter({text: "If this event hasn't actually been voted, contact a server moderator"});
-            interaction.guild.channels.cache.find(channel => channel.name === "event-voting").send({embeds: [embed]});
+            interaction.guild.channels.cache.find(channel => channel.name === "event-voting").send({content: `${events ? `${events}` : "(Role not found. Any role with the name Events will work.)"}\n`, embeds: [embed]});
             await interaction.reply("Message sent.");
         }
     }
