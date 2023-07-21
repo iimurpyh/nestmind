@@ -24,7 +24,7 @@ module.exports = {
             name: "event",
             description: "The event this notification is about",
             type: "oneWordString",
-            choices: ["war", "pvp", "macgyver", "coldwar", "champion", "piracy", "tycoon", "outlaw"],
+            choices: ["war", "pvp", "macgyver", "coldwar", "champion", "piracy", "tycoon", "outlaw", "apocalypse"],
             required: true
         },
         {

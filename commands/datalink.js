@@ -78,7 +78,7 @@ function getArticleEmbed(i, page) {
 
     var index = 0;
     text.split("\n").forEach(line => {
-        if (!(line.indexOf("-") > 0 || line.indexOf(":") > 0 || line.length == 0 || line.toUpperCase() === line)) {
+        if (!(line.indexOf("-") == 1 || line.length < 70 || line.indexOf(":") > 0 || line.length == 0 || line.toUpperCase() === line)) {
             if (finalText.charAt(index + line.length + 1) != "\n") {
                 finalText = finalText.substring(0, index + line.length) + " " + finalText.substring(index + line.length + 1);
             }
@@ -160,7 +160,7 @@ module.exports = {
         }
         
         for (let i in datalinks) {
-            if (i.toLowerCase() == article) {
+            if (i.toLowerCase() == article.toLowerCase()) {
                 var [embed, hasPages] = getArticleEmbed(i, 0);
                 console.log(hasPages);
                 if (hasPages) {
