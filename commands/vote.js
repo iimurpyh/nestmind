@@ -8,7 +8,8 @@ const fancyNames = new Map([
     ['champion', ' Champion'],
     ['piracy', ' Piracy'],
     ['tycoon', ' Tycoon'],
-    ['outlaw', 'n Outlaw']
+    ['outlaw', 'n Outlaw'],
+    ['apocalypse', 'n Apocalypse']
 ])
 
 var lastUsed = 0
