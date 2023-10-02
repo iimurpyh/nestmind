@@ -34,6 +34,12 @@ module.exports = {
     ],
 
     onRun: async (client, interaction, arguments, isTextCommand) => {
+        var user;
+            if (isTextCommand) {
+                user = interaction.author;
+            } else {
+                user = interaction.user;
+            }
         if (interaction.guildId != 1059603807811682335 && interaction.guildId != 818267620821696563) { 
             await interaction.reply("This command can only be used in the Scarlet Skies discord server.");
             return;
@@ -46,12 +52,6 @@ module.exports = {
             await interaction.reply("This command is on cooldown! It can be used again an hour after the last notification (<t:" + Math.floor((lastUsed + GLOBAL_CD)/1000)  + ":R>)");
         } else {
             lastUsed = Date.now();
-            var user;
-            if (isTextCommand) {
-                user = interaction.author;
-            } else {
-                user = interaction.user;
-            }
             const events = interaction.guild.roles.cache.find(role => role.name == "Events");
             const embed = new EmbedBuilder().setTitle(fancyNames.get(arguments[0]) + " has begun!")
                 .setAuthor({ name: interaction.member.displayName + " (" + user.username + ")", iconURL: user.avatarURL() });

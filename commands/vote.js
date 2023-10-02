@@ -35,11 +35,17 @@ module.exports = {
     ],
 
     onRun: async (client, interaction, arguments, isTextCommand) => {
+        var user;
+            if (isTextCommand) {
+                user = interaction.author;
+            } else {
+                user = interaction.user;
+            }
         if (interaction.guildId != 1059603807811682335 && interaction.guildId != 818267620821696563) { 
             await interaction.reply("This command can only be used in the Scarlet Skies discord server.");
             return;
         }
-        if (interaction.user.id == lastUsedId) {
+        if (user.id == lastUsedId) {
             await interaction.reply("This command can't be used by the person who sent the last vote request.");
             return;
         }
@@ -51,12 +57,7 @@ module.exports = {
             await interaction.reply("This command is on cooldown! It can be used again 30 minutes after the last vote request (<t:" + Math.floor((lastUsed + GLOBAL_CD)/1000)  + ":R>)");
         } else {
             lastUsed = Date.now();
-            var user;
-            if (isTextCommand) {
-                user = interaction.author;
-            } else {
-                user = interaction.user;
-            }
+            
             const voting = interaction.guild.roles.cache.find(role => role.name == "Voting");
             const embed = new EmbedBuilder().setTitle("A" + fancyNames.get(arguments[0]) + " vote has started!")
                 .setAuthor({ name: interaction.member.displayName + " (" + user.username + ")", iconURL: user.avatarURL() });
@@ -65,7 +66,7 @@ module.exports = {
             }
             interaction.guild.channels.cache.find(channel => channel.name === "event-voting").send({content: `${voting ? `${voting}` : "(Role not found. Any role with the name Voting will work.)"}\n`, embeds: [embed]});
             
-            lastUsedId = interaction.user.id ?? interaction.author.id
+            lastUsedId = user.id
             await interaction.reply("Message sent.");
         }
     }
