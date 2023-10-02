@@ -7,7 +7,7 @@ const fancyNames = new Map([
     ['coldwar', ' ColdWar'],
     ['champion', ' Champion'],
     ['piracy', ' Piracy'],
-    ['tycoon', ' Tycoon'],
+    ['skirmish', ' Skirmish'],
     ['outlaw', 'n Outlaw'],
     ['apocalypse', 'n Apocalypse']
 ])
