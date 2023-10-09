@@ -109,7 +109,7 @@ function getArticleEmbed(i, page) {
 
         if (data.Malleability != undefined) {
             if (data.Malleability > 0) {
-                articleEmbed.addFields({ name: "Malleability", value: (data.Malleability^2).toString(), inline: true }); // malleability^2 is due to the technical malleability being the root of its actual malleability, but it is more far useful to state the actual malleability visible ingame
+                articleEmbed.addFields({ name: "Malleability", value: (data.Malleability**2).toString(), inline: true }); // malleability**2 is due to the technical malleability being the root of its actual malleability, but it is more far useful to state the actual malleability visible ingame
             } else {
                 articleEmbed.addFields({ name: "Fixed Size", value: data.DefaultSize.X + ", " + data.DefaultSize.Y + ", " + data.DefaultSize.Z, inline: true });
             }
