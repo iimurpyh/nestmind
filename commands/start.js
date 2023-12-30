@@ -59,7 +59,13 @@ module.exports = {
                 embed.setDescription(arguments[1]);
             }
             embed.setFooter({text: "If this event hasn't actually been voted, contact a server moderator"});
-            interaction.guild.channels.cache.find(channel => channel.name === "event-voting").send({content: `${events ? `${events}` : "(Role not found. Any role with the name Events will work.)"}\n`, embeds: [embed]});
+            try {
+                await interaction.guild.channels.cache.find(channel => channel.name === "event-voting").send({content: `${events ? `${events}` : "(Role not found. Any role with the name Events will work.)"}\n`, embeds: [embed]});
+            } catch {
+                await interaction.reply("Message send failed. Channel may not exist, or I may not be able to send messages in it.");
+                return
+            }
+            
             await interaction.reply("Message sent.");
         }
     }

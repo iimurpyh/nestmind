@@ -64,7 +64,14 @@ module.exports = {
             if (arguments[1]) {
                 embed.setDescription(arguments[1]);
             }
-            interaction.guild.channels.cache.find(channel => channel.name === "event-voting").send({content: `${voting ? `${voting}` : "(Role not found. Any role with the name Voting will work.)"}\n`, embeds: [embed]});
+
+            try {
+                await interaction.guild.channels.cache.find(channel => channel.name === "event-voting").send({content: `${voting ? `${voting}` : "(Role not found. Any role with the name Voting will work.)"}\n`, embeds: [embed]});
+            } catch {
+                await interaction.reply("Message send failed. Channel may not exist, or I may not be able to send messages in it.");
+                return
+            }
+            
             
             lastUsedId = user.id
             await interaction.reply("Message sent.");
