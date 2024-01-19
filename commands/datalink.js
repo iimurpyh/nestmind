@@ -14,7 +14,7 @@ const dontFindTagsList = [
 ];
 
 const dontFindBottomList = [
-    "Bot", "Programming", "Storms"
+    "Bot", "Programming", "Storms", "Rules"
 ];
 
 function getArticleEmbed(i, page) {
