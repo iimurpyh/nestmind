@@ -9,7 +9,9 @@ const fancyNames = new Map([
     ['piracy', 'Piracy'],
     ['skirmish', 'Skirmish'],
     ['outlaw', 'Outlaw'],
-    ['apocalypse', 'Apocalypse']
+    ['apocalypse', 'Apocalypse'],
+    ['anarchy', 'n Anarchy'],
+    ['gauntlet', ' Gauntlet']
 ])
 
 var lastUsed = 0
@@ -23,7 +25,7 @@ module.exports = {
             name: "event",
             description: "The event this notification is about",
             type: "oneWordString",
-            choices: ["war", "pvp", "macgyver", "coldwar", "champion", "piracy", "skirmish", "outlaw", "apocalypse"],
+            choices: ["war", "pvp", "macgyver", "coldwar", "champion", "piracy", "skirmish", "outlaw", "apocalypse", "anarchy", "gauntlet"],
             required: true
         },
         {

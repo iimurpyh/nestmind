@@ -10,7 +10,7 @@ const ignoreRichtextList = [
 
 // Pages that are missing things like an article title.
 const dontFindTagsList = [
-    "ReleaseNotes"
+    "ReleaseNotes", "Rules"
 ];
 
 const dontFindBottomList = [
