@@ -78,7 +78,7 @@ module.exports = {
             let watcher = fs.watch(SPEECH_DIR, (eventType, filepath) => {
                 console.log(filepath);
                 // On file creation
-                if (eventType == 'rename' && filepath === soundName) {
+                if (eventType === 'rename' && filepath === soundName) {
                     let resource = createAudioResource(tailingStream.createReadStream(soundPath), {
                         inputType: StreamType.OggOpus
                     });
