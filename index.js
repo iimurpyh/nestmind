@@ -2,9 +2,11 @@ console.log(require('discord.js').version)
 // Require the necessary discord.js classes
 const { Client, Collection, Events, GatewayIntentBits, SlashCommandBuilder } = require('discord.js');
 const { token } = require('./config.json');
-const getSlashCommand = require('./getSlashCommand.js');
 const { exec } = require('child_process');
 const { getVoiceConnection } = require('@discordjs/voice');
+const getSlashCommand = require('./getSlashCommand.js');
+const saveManager = require('./saveManager.js');
+
 
 var fs = require("fs");
 
@@ -107,6 +109,10 @@ client.on(Events.MessageCreate, async message => {
                 }
             }
         }
+    }
+
+    if (message.content.startsWith(saveManager.getGuildConfig(message.guildId, 'tts-prefix'))) {
+        await commands.tts.onRun(message.client, message, message.content.substring(1), true, true);
     }
 })
 

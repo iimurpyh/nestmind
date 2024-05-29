@@ -22,7 +22,7 @@ module.exports = {
         }
     ],
 
-    onRun: async (client, interaction, arguments, isTextCommand) => {
+    onRun: async (client, interaction, arguments, isTextCommand, isPrefixInvoked) => {
         var user;
         if (isTextCommand) {
             user = interaction.author;
@@ -70,7 +70,7 @@ module.exports = {
             }
 
             connectionTimeouts[interaction.guildId] = setTimeout(() => {connection.destroy(); connectionTimeouts[interaction.guildId] == null}, DISCONNECT_TIME_MS);
-        } else {
+        } else if (!isPrefixInvoked) {
             await interaction.reply("You aren't in a voice channel.");
         }
     }
