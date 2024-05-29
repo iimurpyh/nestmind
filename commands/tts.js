@@ -76,6 +76,7 @@ module.exports = {
             });
 
             let watcher = fs.watchFile(SPEECH_DIR, (eventType, filepath) => {
+                console.log(filepath);
                 // On file creation
                 if (eventType == 'rename' && filepath === soundName) {
                     let resource = createAudioResource(tailingStream.createReadStream(soundPath), {
