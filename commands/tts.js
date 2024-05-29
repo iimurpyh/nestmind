@@ -61,6 +61,17 @@ module.exports = {
 
             let voice = ttsVoices[saveManager.getUserConfig(user.id, 'tts-voice')];
 
+            let watcher = fs.watch(SPEECH_DIR, (eventType, filepath) => {
+                // On file creation
+                if (eventType === 'rename' && filepath === soundName) {
+                    let resource = createAudioResource(tailingStream.createReadStream(soundPath), {
+                        inputType: StreamType.Arbitrary
+                    });
+                    ttsPlayer.play(resource);
+                    watcher.close();
+                }
+            });
+
             // pitch is -t, rate is -r
             exec(`RHVoice-test -p ${voice.speaker} -i ${textPath} -o ${soundPath}`, (err) => {
                 if (err) {
@@ -73,18 +84,6 @@ module.exports = {
                 fs.rmSync(soundPath, {
                     force: true
                 });
-            });
-
-            let watcher = fs.watch(SPEECH_DIR, (eventType, filepath) => {
-                console.log(filepath);
-                // On file creation
-                if (eventType === 'rename' && filepath === soundName) {
-                    let resource = createAudioResource(tailingStream.createReadStream(soundPath), {
-                        inputType: StreamType.Arbitrary
-                    });
-                    ttsPlayer.play(resource);
-                    watcher.close();
-                }
             });
             
 
