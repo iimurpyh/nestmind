@@ -61,7 +61,7 @@ module.exports = {
             let voice = ttsVoices[saveManager.getUserConfig(user.id, "tts-voice")];
 
             // pitch is -t, rate is -r
-            exec(`RHVoice-test -p ${voice.speaker} -i tts-message.txt -o tts-voice.ogg`, (err) => {
+            exec(`RHVoice-test -p ${voice.speaker} -i ${textPath} -o ${soundPath}`, (err) => {
                 if (err) {
                     throw new Error(err);
                 }
