@@ -56,7 +56,6 @@ module.exports = {
             let soundPath = path.join(SPEECH_DIR, `tts-sound-${interaction.id}.ogg`);
 
             fs.writeFileSync(textPath, arguments[0]);
-            fs.writeFileSync(soundPath, '');
 
             let voice = ttsVoices[saveManager.getUserConfig(user.id, "tts-voice")];
 
