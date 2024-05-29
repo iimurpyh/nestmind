@@ -2,7 +2,6 @@ const { EmbedBuilder } = require('discord.js');
 const { joinVoiceChannel, getVoiceConnection, createAudioPlayer, createAudioResource, StreamType  } = require('@discordjs/voice');
 const { exec } = require('child_process');
 const fs = require('node:fs');
-const path = require('path');
 const tailingStream = require('tailing-stream');
 const ttsVoices = require('../tts/speech-voice-list.js');
 const saveManager = require('../saveManager.js');
@@ -52,12 +51,15 @@ module.exports = {
                 connection.subscribe(ttsPlayer);
             }
 
-            let textPath = path.join(SPEECH_DIR, `tts-message-${interaction.id}.txt`)
-            let soundPath = path.join(SPEECH_DIR, `tts-sound-${interaction.id}.ogg`);
+            let textPath = SPEECH_DIR + `/tts-message-${interaction.id}.txt`;
+            let soundName = `/tts-sound-${interaction.id}.ogg`;
+            let soundPath = SPEECH_DIR + soundName
+
+            console.log(textPath);
 
             fs.writeFileSync(textPath, arguments[0]);
 
-            let voice = ttsVoices[saveManager.getUserConfig(user.id, "tts-voice")];
+            let voice = ttsVoices[saveManager.getUserConfig(user.id, 'tts-voice')];
 
             // pitch is -t, rate is -r
             exec(`RHVoice-test -p ${voice.speaker} -i ${textPath} -o ${soundPath}`, (err) => {
@@ -73,9 +75,9 @@ module.exports = {
                 });
             });
 
-            let watcher = fs.watch(soundPath, (eventType, filepath) => {
+            let watcher = fs.watchFile(SPEECH_DIR, (eventType, filepath) => {
                 // On file creation
-                if (eventType == 'rename') {
+                if (eventType == 'rename' && filepath === soundName) {
                     let resource = createAudioResource(tailingStream.createReadStream(soundPath), {
                         inputType: StreamType.OggOpus
                     });
