@@ -73,10 +73,17 @@ module.exports = {
                 });
             });
 
-            let resource = createAudioResource(tailingStream.createReadStream(soundPath), {
-                inputType: StreamType.OggOpus
+            let watcher = fs.watch(soundPath, (eventType, filepath) => {
+                // On file creation
+                if (eventType == 'rename') {
+                    let resource = createAudioResource(tailingStream.createReadStream(soundPath), {
+                        inputType: StreamType.OggOpus
+                    });
+                    ttsPlayer.play(resource);
+                    watcher.close();
+                }
             });
-            ttsPlayer.play(resource);
+            
 
             if (connectionTimeouts[interaction.guildId]) {
                 clearTimeout(connectionTimeouts[interaction.guildId]);
