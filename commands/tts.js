@@ -2,9 +2,12 @@ const { EmbedBuilder } = require('discord.js');
 const { joinVoiceChannel, getVoiceConnection, createAudioPlayer, createAudioResource, StreamType  } = require('@discordjs/voice');
 const { exec } = require('child_process');
 const fs = require('node:fs');
+const path = require('path');
+const tailingStream = require('tailing-stream');
 const ttsVoices = require('../tts/speech-voice-list.js');
 const saveManager = require('../saveManager.js');
 
+const SPEECH_DIR = './tts-message-files';
 const DISCONNECT_TIME_MS = 1.5 * 60000
 const ttsPlayer = createAudioPlayer();
 
@@ -49,7 +52,11 @@ module.exports = {
                 connection.subscribe(ttsPlayer);
             }
 
-            fs.writeFileSync("./tts-message.txt", arguments[0]);
+            let textPath = path.join(SPEECH_DIR, `tts-message-${interaction.id}.txt`)
+            let soundPath = path.join(SPEECH_DIR, `tts-sound-${interaction.id}.ogg`);
+
+            fs.writeFileSync(textPath, arguments[0]);
+            fs.writeFileSync(soundPath, '');
 
             let voice = ttsVoices[saveManager.getUserConfig(user.id, "tts-voice")];
 
@@ -59,11 +66,18 @@ module.exports = {
                     throw new Error(err);
                 }
 
-                let resource = createAudioResource(fs.createReadStream('./tts-voice.ogg', {
-                    inputType: StreamType.OggOpus
-                }));
-                ttsPlayer.play(resource);
+                fs.rmSync(textPath, {
+                    force: true
+                });
+                fs.rmSync(soundpath, {
+                    force: true
+                });
             });
+
+            let resource = createAudioResource(tailingStream.createReadStream(soundPath), {
+                inputType: StreamType.OggOpus
+            });
+            ttsPlayer.play(resource);
 
             if (connectionTimeouts[interaction.guildId]) {
                 clearTimeout(connectionTimeouts[interaction.guildId]);

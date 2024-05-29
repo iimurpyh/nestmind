@@ -1,6 +1,3 @@
-
 config.json
 raspi ssh.txt
-tts-message.txt
-tts-voice.ogg
-saveData/saveInfo.json
+tts-message-files
