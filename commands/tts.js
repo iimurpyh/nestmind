@@ -45,14 +45,14 @@ module.exports = {
                     throw new Error(err);
                 }
 
-                let resource = createAudioResource(fs.createReadStream('./tts-audio.ogg', {
+                let resource = createAudioResource(fs.createReadStream('./tts-voice.ogg', {
                     inputType: StreamType.OggOpus
                 }));
 
                 ttsPlayer.play(resource);
-            })
+            });
         } else {
-            interaction.reply("You aren't in a voice channel.");
+            await interaction.reply("You aren't in a voice channel.");
         }
     }
 };
