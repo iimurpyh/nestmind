@@ -3,6 +3,7 @@ console.log(require('discord.js').version)
 const { Client, Collection, Events, GatewayIntentBits, SlashCommandBuilder } = require('discord.js');
 const { token } = require('./config.json');
 const getSlashCommand = require('./getSlashCommand.js');
+const { exec } = require('child_process');
 
 var fs = require("fs");
 
@@ -12,7 +13,9 @@ const PREFIX = "^"
 const client = new Client({ intents: [
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
-    GatewayIntentBits.MessageContent
+    GatewayIntentBits.MessageContent,
+    GatewayIntentBits.GuildVoiceStates
+    
 ] });
 
 client.commands = new Collection();
@@ -36,10 +39,11 @@ client.login(token);
 
 client.on(Events.MessageCreate, async message => {
     if (message.content.startsWith(PREFIX) == true) {
+        let commandName = message.content.substring(1, message.content.indexOf(" "));
         for (var i in commands) {
             var cmd = commands[i];
             for (var e in cmd.aliases) {
-                if (message.content.startsWith(PREFIX + cmd.aliases[e]) == true) {
+                if (cmd.aliases[e] == commandName) {
                     try {
                         var arguments = [];
                         var pos = 0;
@@ -50,13 +54,17 @@ client.on(Events.MessageCreate, async message => {
                                 var end = message.content.indexOf(" ", start+1);
                                 var str
                                 if (end == -1) {
+                                    if (start == -1) {
+                                        continue;
+                                    }
                                     str = message.content.substring(start+1);
                                 } else {
                                     str = message.content.substring(start+1, end);
                                 }
                                 if (option.choices) {
-                                    if (option.choices.find(s => s == str.toLowerCase())) {
-                                        arguments.push(str);
+                                    let result = option.choices.find(s => s.toLowerCase() == str.toLowerCase())
+                                    if (result) {
+                                        arguments.push(result);
                                     } else {
                                         if (message.replied || message.deferred) {
                                             await message.followUp({ content: 'Invalid argument for "' + option.name + '" field.', ephemeral: true });
@@ -132,8 +140,8 @@ client.on(Events.InteractionCreate, async interaction => {
 client.on(Events.InteractionCreate, async interaction => {
     if (!interaction.isButton()) return;
     const commandName = interaction.customId.split(' ')[0];
-    console.log(commandName);
     const command = interaction.client.commands.get(commandName);
+
     try {
         await command.onButton(client, interaction);
     } catch (error) {

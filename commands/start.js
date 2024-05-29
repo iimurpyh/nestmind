@@ -10,7 +10,7 @@ const fancyNames = new Map([
     ['skirmish', 'Skirmish'],
     ['outlaw', 'Outlaw'],
     ['apocalypse', 'Apocalypse'],
-    ['anarchy', 'n Anarchy'],
+    ['anarchy', 'Anarchy'],
     ['gauntlet', ' Gauntlet']
 ])
 
