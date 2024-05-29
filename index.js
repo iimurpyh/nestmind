@@ -112,7 +112,7 @@ client.on(Events.MessageCreate, async message => {
     }
 
     if (message.content.startsWith(saveManager.getGuildConfig(message.guildId, 'tts-prefix'))) {
-        await commands.tts.onRun(message.client, message, message.content.substring(1), true, true);
+        await commands.tts.onRun(message.client, message, [message.content.substring(1)], true, true);
     }
 })
 
