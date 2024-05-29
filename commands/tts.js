@@ -52,7 +52,7 @@ module.exports = {
             }
 
             let textPath = SPEECH_DIR + `/tts-message-${interaction.id}.txt`;
-            let soundName = `tts-sound-${interaction.id}.opus`;
+            let soundName = `tts-sound-${interaction.id}.ogg`;
             let soundPath = SPEECH_DIR + '/' + soundName;
 
             console.log(textPath);
@@ -63,9 +63,9 @@ module.exports = {
 
             let watcher = fs.watch(SPEECH_DIR, (eventType, filepath) => {
                 // On file creation
-                if (eventType === 'rename' && filepath === soundName) {
+                if (eventType === 'change' && filepath === soundName) {
                     let resource = createAudioResource(tailingStream.createReadStream(soundPath), {
-                        inputType: StreamType.Opus
+                        inputType: StreamType.OggOpus
                     });
                     ttsPlayer.play(resource);
                     watcher.close();
