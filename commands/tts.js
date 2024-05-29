@@ -68,7 +68,7 @@ module.exports = {
                 fs.rmSync(textPath, {
                     force: true
                 });
-                fs.rmSync(soundpath, {
+                fs.rmSync(soundPath, {
                     force: true
                 });
             });
