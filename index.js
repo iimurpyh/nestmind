@@ -4,6 +4,7 @@ const { Client, Collection, Events, GatewayIntentBits, SlashCommandBuilder } = r
 const { token } = require('./config.json');
 const getSlashCommand = require('./getSlashCommand.js');
 const { exec } = require('child_process');
+const { getVoiceConnection } = require('@discordjs/voice');
 
 var fs = require("fs");
 
@@ -39,7 +40,10 @@ client.login(token);
 
 client.on(Events.MessageCreate, async message => {
     if (message.content.startsWith(PREFIX) == true) {
-        let commandName = message.content.substring(1, message.content.indexOf(" "));
+        let space = message.content.indexOf(" ");
+        if (space == -1) {space = message.content.length;}
+        let commandName = message.content.substring(1, space);
+        console.log(commandName);
         for (var i in commands) {
             var cmd = commands[i];
             for (var e in cmd.aliases) {
@@ -48,13 +52,14 @@ client.on(Events.MessageCreate, async message => {
                         var arguments = [];
                         var pos = commandName.length+1;
                         for (var n in cmd.options) {
-                            var option = cmd.options[n]
+                            var option = cmd.options[n];
                             if (option.type == "oneWordString") {
                                 var start = message.content.indexOf(" ", pos);
                                 var end = message.content.indexOf(" ", start+1);
                                 var str
                                 if (end == -1) {
                                     if (start == -1) {
+                                        console.log('looping');
                                         continue;
                                     }
                                     str = message.content.substring(start+1);
@@ -152,3 +157,13 @@ client.on(Events.InteractionCreate, async interaction => {
 		}
     }
 });
+
+function shutdown() {
+    let connection = getVoiceConnection();
+    if (connection) {
+        connection.destroy();
+    }
+    return;
+}
+
+process.on('beforeExit', shutdown);

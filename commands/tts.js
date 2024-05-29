@@ -2,9 +2,13 @@ const { EmbedBuilder } = require('discord.js');
 const { joinVoiceChannel, getVoiceConnection, createAudioPlayer, createAudioResource, StreamType  } = require('@discordjs/voice');
 const { exec } = require('child_process');
 const fs = require('node:fs');
+const ttsVoices = require('../tts/speech-voice-list.js');
+const saveManager = require('../saveManager.js');
 
+const DISCONNECT_TIME_MS = 1.5 * 60000
 const ttsPlayer = createAudioPlayer();
 
+let connectionTimeouts = new Map();
 
 module.exports = {
     name: "tts",
@@ -18,7 +22,14 @@ module.exports = {
         }
     ],
 
-    onRun: async (client, interaction, arguments) => {
+    onRun: async (client, interaction, arguments, isTextCommand) => {
+        var user;
+        if (isTextCommand) {
+            user = interaction.author;
+        } else {
+            user = interaction.user;
+        }
+        
         if (!arguments[0]) {
             ttsPlayer.stop();
             return;
@@ -37,20 +48,28 @@ module.exports = {
 
                 connection.subscribe(ttsPlayer);
             }
-            
 
             fs.writeFileSync("./tts-message.txt", arguments[0]);
-            exec('RHVoice-test -i tts-message.txt -o tts-voice.ogg', (err) => {
+
+            let voice = ttsVoices[saveManager.getUserConfig(user.id, "tts-voice")];
+
+            // pitch is -t, rate is -r
+            exec(`RHVoice-test -p ${voice.speaker} -i tts-message.txt -o tts-voice.ogg`, (err) => {
                 if (err) {
                     throw new Error(err);
                 }
+
+                let resource = createAudioResource(fs.createReadStream('./tts-voice.ogg', {
+                    inputType: StreamType.OggOpus
+                }));
+                ttsPlayer.play(resource);
             });
 
-            let resource = createAudioResource(fs.createReadStream('./tts-voice.ogg', {
-                inputType: StreamType.OggOpus
-            }));
+            if (connectionTimeouts[interaction.guildId]) {
+                clearTimeout(connectionTimeouts[interaction.guildId]);
+            }
 
-            ttsPlayer.play(resource);
+            connectionTimeouts[interaction.guildId] = setTimeout(() => {connection.destroy(); connectionTimeouts[interaction.guildId] == null}, DISCONNECT_TIME_MS);
         } else {
             await interaction.reply("You aren't in a voice channel.");
         }

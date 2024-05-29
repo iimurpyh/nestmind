@@ -2,6 +2,8 @@ const { PermissionsBitField } = require('discord.js');
 const saveManager = require('../saveManager.js');
 const ttsVoices = require('../tts/speech-voice-list.js');
 
+voiceOptions = Object.keys(ttsVoices);
+
 module.exports = {
     name: "tts-voice",
     aliases: ["tts-voice"],
@@ -11,7 +13,7 @@ module.exports = {
             name: "voice",
             description: "Which voice to use. Use tts-voices to list available voices. Leave blank to see current voice.",
             type: "oneWordString",
-            choices: ttsVoices
+            choices: voiceOptions
         }
     ],
 
