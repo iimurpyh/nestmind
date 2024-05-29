@@ -9,7 +9,7 @@ const ttsPlayer = createAudioPlayer();
 module.exports = {
     name: "tts",
     aliases: ["tts"],
-    description: "Communicate message using text to speech in your current VC channel. Use without arguments to stop current message.",
+    description: "Communicate message using text to speech in your current VC channel.",
     options: [
         {
             name: "message",

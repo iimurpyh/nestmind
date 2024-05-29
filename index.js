@@ -46,7 +46,7 @@ client.on(Events.MessageCreate, async message => {
                 if (cmd.aliases[e] == commandName) {
                     try {
                         var arguments = [];
-                        var pos = 0;
+                        var pos = commandName.length+1;
                         for (var n in cmd.options) {
                             var option = cmd.options[n]
                             if (option.type == "oneWordString") {
@@ -84,11 +84,10 @@ client.on(Events.MessageCreate, async message => {
                                 
                             } else if (option.type == "string") {
                                 if (pos >= 0) {
-                                    arguments.push(message.content.substring(pos));
+                                    arguments.push(message.content.substring(pos+1));
                                 } else {
                                     arguments.push(" ");
                                 }
-                                
                             }
                         }
                         await cmd.onRun(message.client, message, arguments, true);
