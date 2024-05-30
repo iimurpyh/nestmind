@@ -38,7 +38,6 @@ module.exports = {
         }
         let vc = interaction.member.voice.channel; 
         if (vc) {
-            console.log(vc.name);
             let connection = getVoiceConnection();
             if (!connection || connection.channel.id != vc.id) {
                 connection = joinVoiceChannel({
@@ -55,8 +54,6 @@ module.exports = {
             let soundName = `tts-sound-${interaction.id}.ogg`;
             let soundPath = SPEECH_DIR + '/' + soundName;
 
-            console.log(textPath);
-
             fs.writeFileSync(textPath, arguments[0]);
 
             let voice = ttsVoices[saveManager.getUserConfig(user.id, 'tts-voice')];
@@ -64,10 +61,19 @@ module.exports = {
             let watcher = fs.watch(SPEECH_DIR, (eventType, filepath) => {
                 // On file creation
                 if (eventType === 'change' && filepath === soundName) {
+                    console.log('starting stream');
                     let resource = createAudioResource(tailingStream.createReadStream(soundPath), {
                         inputType: StreamType.OggOpus
                     });
                     ttsPlayer.play(resource);
+                    ttsPlayer.once('idle', () => {
+                        fs.rmSync(textPath, {
+                            force: true
+                        });
+                        fs.rmSync(soundPath, {
+                            force: true
+                        });
+                    });
                     watcher.close();
                 }
             });
@@ -78,12 +84,7 @@ module.exports = {
                     throw new Error(err);
                 }
 
-                fs.rmSync(textPath, {
-                    force: true
-                });
-                fs.rmSync(soundPath, {
-                    force: true
-                });
+                
             });
             
 
