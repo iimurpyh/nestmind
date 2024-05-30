@@ -63,7 +63,7 @@ module.exports = {
                 if (eventType === 'change' && filepath === soundName) {
                     console.log('starting stream');
                     let resource = createAudioResource(tailingStream.createReadStream(soundPath), {
-                        inputType: StreamType.OggOpus
+                        inputType: StreamType.Arbitrary
                     });
                     ttsPlayer.play(resource);
                     ttsPlayer.once('idle', () => {
