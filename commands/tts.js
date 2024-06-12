@@ -25,6 +25,8 @@ module.exports = {
     ],
 
     onRun: async (client, interaction, arguments, isTextCommand, isPrefixInvoked) => {
+        await interaction.reply('TTS is disabled for now.');
+        return;
         var user;
         if (isTextCommand) {
             user = interaction.author;
@@ -60,7 +62,7 @@ module.exports = {
 
             let watcher = fs.watch(SPEECH_DIR, (eventType, filepath) => {
                 // On file creation
-                if (eventType === 'change' && filepath === soundName) {
+                if (eventType === 'rename' && filepath === soundName) {
                     console.log('starting stream');
                     let resource = createAudioResource(tailingStream.createReadStream(soundPath), {
                         inputType: StreamType.Arbitrary
