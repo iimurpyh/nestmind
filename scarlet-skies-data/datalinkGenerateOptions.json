@@ -1,0 +1,40 @@
+{
+    "ignoredFooterFields": ["Requires", "Malleability"],
+    "overrides": {
+        "Programming": {
+            "ignoreFooter": true,
+            "pageSubtitles": [
+                "=====SYNTAX=====",
+                "Lists are simply strings/numbers seperated by semicolons",
+                "=====QUICK INSTRUCTION LIST=====",
+                "wait[num]: Pauses the program for [num] seconds.",
+                "=====ADVANCED: VARIABLE OPERATIONS=====",
+                "=====ADVANCED: IF====="
+            ]
+        },
+        "Dish": {
+            "pageSubtitles": [
+                "print"
+            ]
+        },
+        "Events": {
+            "ignoreFooter": true,
+            "pageSubtitles": [
+                "WAR",
+                "PVP",
+                "MACGYVER",
+                "COLD WAR",
+                "CHAMPION",
+                "PIRACY",
+                "SKIRMISH",
+                "OUTLAW",
+                "APOCALYPSE",
+                "GAUNTLET",
+                "ANARCHY"
+            ]
+        },
+        "Book": {
+            "dontStripRichText": true
+        }
+    }
+}

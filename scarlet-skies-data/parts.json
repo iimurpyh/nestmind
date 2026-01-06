@@ -1,0 +1,4075 @@
+{
+    "???": {
+        "DefaultSize": {
+            "X": 3,
+            "Y": 10,
+            "Z": 3
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 20,
+        "ToolTip": "Experimental weapon. Does not need ammo or save."
+    },
+    "Abantium": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 300,
+        "Material": "Metal",
+        "Price": 6,
+        "ToolTip": "Space material that is very malleable and light."
+    },
+    "Accelerator": {
+        "DefaultSize": {
+            "X": 8,
+            "Y": 30,
+            "Z": 30
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 1600,
+        "Recipe": [
+            "Aluminium",
+            "Copper",
+            "Gas",
+            "Jade",
+            "Neodymium",
+            "Uranium"
+        ],
+        "ToolTip": "Converts Diamond into Zaktralia."
+    },
+    "ActiveDefense": {
+        "DefaultSize": {
+            "X": 3,
+            "Y": 6,
+            "Z": 3
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 250,
+        "Recipe": [
+            "Copper",
+            "Diamond",
+            "Ruby",
+            "Silicon",
+            "Titanium"
+        ],
+        "ToolTip": "Anti-projectile module."
+    },
+    "Actuator": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 1,
+            "Z": 4
+        },
+        "Malleability": 16,
+        "Material": "Metal",
+        "Price": 8,
+        "Recipe": [
+            "Aluminium",
+            "Iron",
+            "Oil"
+        ],
+        "ToolTip": "Slides an attached part with the same rotation when powered and signaled."
+    },
+    "AetherGate": {
+        "DefaultSize": {
+            "X": 8,
+            "Y": 8,
+            "Z": 8
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 1500,
+        "Recipe": [
+            "Abantium",
+            "Eridanium",
+            "ExoticMatter",
+            "Gas",
+            "Jade",
+            "Lirvanite",
+            "Silicon",
+            "Uranium"
+        ],
+        "ToolTip": "Mysterious portal generator."
+    },
+    "AirBag": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 9,
+        "Price": 10,
+        "ToolTip": "Expands when signaled."
+    },
+    "AlkalineCell": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 2,
+            "Z": 1
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 20,
+        "Recipe": [
+            "Aluminium",
+            "Ashes",
+            "LiquidNitrogen",
+            "Magnesium"
+        ],
+        "ToolTip": "Non-rechargable but instant power source."
+    },
+    "Aluminium": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 50,
+        "Material": "Metal",
+        "Price": 3,
+        "ToolTip": "Malleable, light metal."
+    },
+    "Americium": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 1
+        },
+        "Malleability": 4,
+        "Material": "Neon",
+        "Price": 60,
+        "ToolTip": "Radioactive material which emits signals."
+    },
+    "Amethyst": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 6,
+        "Material": "SmoothPlastic",
+        "Price": 12,
+        "ToolTip": "Rare gem found only in crystal outcroppings."
+    },
+    "Ammo": {
+        "DefaultSize": {
+            "X": 3,
+            "Y": 4,
+            "Z": 3
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 60,
+        "Recipe": [
+            "Copper",
+            "Gunpowder"
+        ],
+        "ToolTip": "Touch to a Container to insert ammo."
+    },
+    "Anchor": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 12,
+        "Material": "Plastic",
+        "Price": 6,
+        "Recipe": [
+            "Iron"
+        ],
+        "ToolTip": "Prevents all movement when active."
+    },
+    "Antenna": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 2,
+            "Z": 1
+        },
+        "Malleability": 12,
+        "Material": "Metal",
+        "Price": 8,
+        "Recipe": [
+            "Copper",
+            "Quartz"
+        ],
+        "ToolTip": "Sends power or signals wirelessly."
+    },
+    "Arcolantium": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 4,
+            "Z": 1
+        },
+        "Malleability": 50,
+        "Material": "Foil",
+        "Price": 200,
+        "Recipe": [
+            "Copper",
+            "Lirvanite",
+            "Protalium",
+            "ProtaliumOxide",
+            "Uranium"
+        ],
+        "ToolTip": "Nearly indestructible material."
+    },
+    "Armor": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 1
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 14,
+        "Recipe": [
+            "Flint",
+            "Iron",
+            "Wood"
+        ],
+        "ToolTip": "Provides damage resistance when worn."
+    },
+    "Ashes": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Slate",
+        "Price": 1,
+        "ToolTip": "Left over from burned items."
+    },
+    "Asphalt": {
+        "DefaultSize": {
+            "X": 8,
+            "Y": 1,
+            "Z": 8
+        },
+        "Malleability": 100,
+        "Material": "Pebble",
+        "Price": 6,
+        "Recipe": [
+            "Flint",
+            "Oil",
+            "Stone"
+        ],
+        "ToolTip": "High-friction road material, weak in buildings/vehicles."
+    },
+    "BallastTank": {
+        "DefaultSize": {
+            "X": 6,
+            "Y": 4,
+            "Z": 4
+        },
+        "Malleability": 100,
+        "Material": "SmoothPlastic",
+        "Price": 100,
+        "Recipe": [
+            "Aluminium",
+            "Gold",
+            "Iron",
+            "Magnesium"
+        ],
+        "ToolTip": "Controls submarine depth, and prevents sea corrosion."
+    },
+    "Balloon": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 4,
+            "Z": 4
+        },
+        "Malleability": 1000,
+        "Material": "Plastic",
+        "Price": 14,
+        "Recipe": [
+            "Ashes",
+            "Cotton",
+            "Leaves",
+            "Oil"
+        ],
+        "ToolTip": "Floats at Controller-specified heights."
+    },
+    "BallTemplate": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Concrete",
+        "Price": 1,
+        "Recipe": [
+            "Stone"
+        ],
+        "ToolTip": "Attach to a raw material to form a sphere."
+    },
+    "Bank": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 4,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 40,
+        "Recipe": [
+            "Aluminium",
+            "Iron",
+            "Magnesium",
+            "Titanium"
+        ],
+        "ToolTip": "Stores Credits, useful for future servers."
+    },
+    "BarbedWire": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 1,
+            "Z": 8
+        },
+        "Malleability": 5,
+        "Material": "Plastic",
+        "Price": 5,
+        "Recipe": [
+            "Iron",
+            "Sand",
+            "Flint"
+        ],
+        "ToolTip": "Damages players on contact while active. Click to unpack"
+    },
+    "BaseCenter": {
+        "DefaultSize": {
+            "X": 10,
+            "Y": 10,
+            "Z": 10
+        },
+        "Malleability": 0,
+        "Material": "WoodPlanks",
+        "Price": 25,
+        "Recipe": [
+            "Copper",
+            "Flint",
+            "Gold",
+            "Quartz",
+            "Wood"
+        ],
+        "ToolTip": "Hurls spike balls at enemies on foot. Team spawnpoint in teamed events."
+    },
+    "BeamCannon": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 8,
+            "Z": 2
+        },
+        "Malleability": 14,
+        "Material": "Metal",
+        "Price": 50,
+        "Recipe": [
+            "Copper",
+            "Glass",
+            "Gold",
+            "Jade",
+            "Magnesium",
+            "Titanium"
+        ],
+        "ToolTip": "Fires energy rays when activated. Requires power and inserted material."
+    },
+    "Belt": {
+        "DefaultSize": {
+            "X": 6,
+            "Y": 2,
+            "Z": 12
+        },
+        "Malleability": 50,
+        "Material": "Metal",
+        "Price": 10,
+        "Recipe": [
+            "Copper",
+            "Diamond",
+            "Iron",
+            "Leaves"
+        ],
+        "ToolTip": "Transports parts while powered."
+    },
+    "Bend": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 16,
+            "Z": 16
+        },
+        "Malleability": 32,
+        "Material": "Pebble",
+        "Price": 10,
+        "Recipe": [
+            "Iron",
+            "Stone",
+            "Wood"
+        ],
+        "ToolTip": "Changes Track direction or acts as a rail switch."
+    },
+    "BilgePump": {
+        "DefaultSize": {
+            "X": 3,
+            "Y": 3,
+            "Z": 3
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 16,
+        "Recipe": [
+            "Copper",
+            "Magnesium"
+        ],
+        "ToolTip": "Removes water from Hulls/CrudeHulls."
+    },
+    "BioLab": {
+        "DefaultSize": {
+            "X": 6,
+            "Y": 6,
+            "Z": 6
+        },
+        "Malleability": 0,
+        "Material": "SmoothPlastic",
+        "Price": 40,
+        "Recipe": [
+            "Copper",
+            "Diamond",
+            "Glass",
+            "Oil",
+            "Sulfur",
+            "Titanium"
+        ],
+        "ToolTip": "Artificial plant life creator."
+    },
+    "BioWall": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 2,
+            "Z": 4
+        },
+        "Malleability": 50,
+        "Material": "Grass",
+        "Price": 8,
+        "Recipe": [
+            "Ashes",
+            "OrganicMatter",
+            "Sulfur"
+        ],
+        "ToolTip": "Slowly regenerates when damaged."
+    },
+    "BladeTemplate": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Concrete",
+        "Price": 2,
+        "Recipe": [
+            "Stone"
+        ],
+        "ToolTip": "Attach to a raw material to form a melee-attack Blade."
+    },
+    "Bogie": {
+        "DefaultSize": {
+            "X": 8,
+            "Y": 3,
+            "Z": 6
+        },
+        "Malleability": 30,
+        "Material": "Metal",
+        "Price": 25,
+        "Recipe": [
+            "Copper",
+            "Iron",
+            "Quartz"
+        ],
+        "ToolTip": "Train base that follows Track. Powered by an attached motor/engine."
+    },
+    "Book": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 3,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Wood",
+        "Price": 20,
+        "Recipe": [
+            "Charcoal",
+            "Cloth",
+            "Wood"
+        ],
+        "ToolTip": "Click to read or write."
+    },
+    "BotSpawn": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 1,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 300,
+        "Recipe": [
+            "Quartz",
+            "Stone",
+            "Iron",
+            "Gold"
+        ],
+        "ToolTip": "Spawns a Jolem."
+    },
+    "Brake": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 10,
+        "Material": "Plastic",
+        "Price": 3,
+        "Recipe": [
+            "Iron"
+        ],
+        "ToolTip": "Reduces horizontal velocity while active."
+    },
+    "Brick": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 4,
+            "Z": 4
+        },
+        "Malleability": 80,
+        "Material": "Brick",
+        "Price": 4,
+        "Recipe": [
+            "Ashes",
+            "Ice",
+            "Stone"
+        ],
+        "ToolTip": "Malleable and heavy."
+    },
+    "Button": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 12,
+        "Material": "Metal",
+        "Price": 4,
+        "Recipe": [
+            "Copper"
+        ],
+        "ToolTip": "Signals attached parts when clicked. Can be used for keybinds in seats."
+    },
+    "Builder": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 180,
+        "Recipe": [
+            "Iron", "Gold", "Copper", "Quartz", "Ruby"
+        ],
+        "ToolTip": "Places railroad sections from Crates."
+    },
+    "BurstWire": {
+        "DefaultSize": {
+            "X": 6,
+            "Y": 1,
+            "Z": 1
+        },
+        "Malleability": 40,
+        "Material": "Foil",
+        "Price": 10,
+        "Recipe": [
+            "Copper", "Charcoal", "Leaves", "Oil"
+        ],
+        "ToolTip": "Pushes away connected parts and emits a delayed signal."
+    },
+    "Camera": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 8,
+        "Recipe": [
+            "Aluminium",
+            "Glass",
+            "Silicon"
+        ],
+        "ToolTip": "Sends video feed to a Television."
+    },
+    "Cannon": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 8,
+            "Z": 2
+        },
+        "Malleability": 16,
+        "Material": "Metal",
+        "Price": 12,
+        "Recipe": [
+            "Ashes",
+            "Charcoal",
+            "Flint",
+            "Iron",
+            "Sulfur"
+        ],
+        "ToolTip": "Projectile weapon. Requires inserted material and ammo supply."
+    },
+    "CarbonFiber": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 1,
+            "Z": 4
+        },
+        "Malleability": 24,
+        "Material": "Fabric",
+        "Price": 16,
+        "Recipe": [
+            "Acid",
+            "Charcoal",
+            "Oil",
+            "Silicon"
+        ],
+        "ToolTip": "Strong and lightweight, but expensive and low malleability."
+    },
+    "Catapult": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 8
+        },
+        "Malleability": 10,
+        "Material": "Wood",
+        "Price": 8,
+        "Recipe": [
+            "Cotton",
+            "Wood"
+        ],
+        "ToolTip": "Primitive part-throwing weapon."
+    },
+    "Ceramic": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 1,
+            "Z": 4
+        },
+        "Malleability": 10,
+        "Material": "Glass",
+        "Price": 10,
+        "Recipe": [
+            "Jade",
+            "LiquidNitrogen",
+            "Quartz",
+            "Stone"
+        ],
+        "ToolTip": "Resistant to attack, but can shatter from large impacts."
+    },
+    "Charcoal": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 1,
+            "Z": 1
+        },
+        "Malleability": 4,
+        "Material": "Plastic",
+        "Price": 2,
+        "ToolTip": "Burns very slowly."
+    },
+    "ChemicalPlant": {
+        "DefaultSize": {
+            "X": 8,
+            "Y": 4,
+            "Z": 8
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 20,
+        "ToolTip": "Uses energy to convert certain substances into others."
+    },
+    "Cleats": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 1,
+            "Z": 4
+        },
+        "Malleability": 8,
+        "Material": "DiamondPlate",
+        "Price": 12,
+        "Recipe": [
+            "Jade",
+            "Titanium"
+        ],
+        "ToolTip": "Very strong, high-friction material for mech feet."
+    },
+    "CloakingDevice": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 140,
+        "Recipe": [
+            "Glass",
+            "Gold",
+            "Jade",
+            "Ruby",
+            "Silicon",
+            "Zaktralia"
+        ],
+        "ToolTip": "Renders attached vehicles invisible when powered."
+    },
+    "Clock": {
+        "DefaultSize": {
+            "X": 6,
+            "Y": 1,
+            "Z": 6
+        },
+        "Malleability": 10,
+        "Material": "Plastic",
+        "Price": 5,
+        "Recipe": [
+            "Glass",
+            "Iron",
+            "Quartz"
+        ],
+        "ToolTip": "Displays game year and time of day."
+    },
+    "Cloth": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 0.20000000298023224,
+            "Z": 4
+        },
+        "Malleability": 2,
+        "Material": "Plastic",
+        "Price": 2,
+        "Recipe": [
+            "Cotton"
+        ],
+        "ToolTip": "Thin, paper-like material. Absorbs liquids."
+    },
+    "CMOS": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 12,
+        "Material": "Plastic",
+        "Price": 8,
+        "Recipe": [
+            "Gold",
+            "Silicon"
+        ],
+        "ToolTip": "Performs complex signaling operations."
+    },
+    "Coal": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 1,
+            "Z": 1
+        },
+        "Malleability": 0,
+        "Material": "Pebble",
+        "Price": 6,
+        "ToolTip": "Solid fossil fuel. Burns very slowly."
+    },
+    "Coat": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 1
+        },
+        "Malleability": 0,
+        "Material": "SmoothPlastic",
+        "Price": 6,
+        "Recipe": [
+            "Wood",
+            "Leaves"
+        ],
+        "ToolTip": "Provides warmth when worn."
+    },
+    "ComboLock": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 8,
+        "Recipe": [
+            "Copper",
+            "Silicon",
+            "Titanium"
+        ],
+        "ToolTip": "Signals when correct code entered. Prevents hacking of attached doors."
+    },
+    "Commlink": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 4,
+        "Material": "SmoothPlastic",
+        "Price": 8,
+        "Recipe": [
+            "Charcoal",
+            "Copper",
+            "Magnesium",
+            "Silicon"
+        ],
+        "ToolTip": "Turns nearby chats into a signal, range depends on size."
+    },
+    "Computer": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 2,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 50,
+        "Recipe": [
+            "Copper",
+            "Gold",
+            "Quartz",
+            "Ruby",
+            "Silicon"
+        ],
+        "ToolTip": "Runs programs or websites, requires power."
+    },
+    "Conduit": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 40,
+        "Material": "Metal",
+        "Price": 8,
+        "Recipe": [
+            "Copper",
+            "Gold"
+        ],
+        "ToolTip": "Recieves energy from Substations through the ground."
+    },
+    "Concrete": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 1,
+            "Z": 4
+        },
+        "Malleability": 60,
+        "Material": "Concrete",
+        "Price": 10,
+        "Recipe": [
+            "Diamond",
+            "Flint",
+            "Quartz",
+            "Sand",
+            "Stone",
+            "Water"
+        ],
+        "ToolTip": "Resilient and non-flammable."
+    },
+    "ConfigBox": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 1
+        },
+        "Malleability": 12,
+        "Price": 4,
+        "Recipe": [
+            "Magnesium",
+            "Quartz"
+        ],
+        "ToolTip": "Configures attached part settings when signaled."
+    },
+    "Container": {
+        "DefaultSize": {
+            "X": 3,
+            "Y": 3,
+            "Z": 3
+        },
+        "Malleability": 32,
+        "Material": "Plastic",
+        "Price": 4,
+        "Recipe": [
+            "Iron",
+            "Leaves"
+        ],
+        "ToolTip": "Storage for liquids, gases, Ammo, or Coal."
+    },
+    "Controller": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 4,
+            "Z": 1
+        },
+        "Malleability": 12,
+        "Material": "Metal",
+        "Price": 5,
+        "Recipe": [
+            "Copper",
+            "Iron"
+        ],
+        "ToolTip": "Controls engine/motor/rocket speed, or height of Balloon/BallastTank."
+    },
+    "Converter": {
+        "DefaultSize": {
+            "X": 6,
+            "Y": 6,
+            "Z": 6
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 12,
+        "Recipe": [
+            "Iron",
+            "Quartz",
+            "Silicon",
+            "Titanium"
+        ],
+        "ToolTip": "Copies and replicates buildings."
+    },
+    "Cooler": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 6,
+        "Material": "Neon",
+        "Price": 5,
+        "Recipe": [
+            "Aluminium",
+            "Copper"
+        ],
+        "ToolTip": "Reduces temperature while powered. Use with Container for LiquidNitrogen."
+    },
+    "Copper": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 60,
+        "Material": "Metal",
+        "Price": 6,
+        "ToolTip": "Weak, malleable metal."
+    },
+    "CornerTemplate": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Concrete",
+        "Price": 1,
+        "Recipe": [
+            "Stone"
+        ],
+        "ToolTip": "Attach to a raw material to form a CornerWedge."
+    },
+    "Cotton": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 1,
+            "Z": 1
+        },
+        "Malleability": 0,
+        "Material": "Grass",
+        "Price": 4,
+        "ToolTip": "Cotton ball."
+    },
+    "Crate": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 2,
+            "Z": 4
+        },
+        "Malleability": 36,
+        "Material": "Metal",
+        "Price": 6,
+        "Recipe": [
+            "Ashes",
+            "Copper",
+            "Wood"
+        ],
+        "ToolTip": "Stores materials."
+    },
+    "CrudeHull": {
+        "DefaultSize": {
+            "X": 16,
+            "Y": 4,
+            "Z": 6
+        },
+        "Malleability": 100,
+        "Material": "WoodPlanks",
+        "Price": 4,
+        "Recipe": [
+            "Wood"
+        ],
+        "ToolTip": "Buoyant wooden ship hull."
+    },
+    "CrudeWing": {
+        "DefaultSize": {
+            "X": 12,
+            "Y": 1,
+            "Z": 3
+        },
+        "Malleability": 14,
+        "Material": "Wood",
+        "Price": 4,
+        "Recipe": [
+            "Cotton",
+            "Leaves",
+            "Wood"
+        ],
+        "ToolTip": "Primitive way to provide lift when moving forward."
+    },
+    "Curium": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 1,
+            "Z": 1
+        },
+        "Malleability": 0,
+        "Material": "Neon",
+        "Price": 140,
+        "ToolTip": "Intensely radioactive and pyrophoric material which emits signals through walls."
+    },
+    "Debris": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Pebble",
+        "Price": 0,
+        "ToolTip": "Item damaged beyond repair."
+    },
+    "Debouncer": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 12,
+        "Material": "Pebble",
+        "Price": 3,
+        "ToolTip": "Signal wire with an adjustable cooldown."
+    },
+    "DelayWire": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 12,
+        "Material": "Metal",
+        "Price": 3,
+        "Recipe": [
+            "Charcoal",
+            "Copper"
+        ],
+        "ToolTip": "Transfers signal slowly."
+    },
+    "Derrick": {
+        "DefaultSize": {
+            "X": 8,
+            "Y": 10,
+            "Z": 8
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 30,
+        "Recipe": [
+            "Acid",
+            "Copper",
+            "Gold",
+            "Ice",
+            "Iron",
+            "Oil",
+            "Ruby",
+            "Sulfur"
+        ],
+        "ToolTip": "Drills for resources when powered and clicked."
+    },
+    "Detector": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 1,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 14,
+        "Recipe": [
+            "Copper", "Quartz", "Ruby", "Diamond"
+        ],
+        "ToolTip": "Emits a signal when certain actions occur within range."
+    },
+    "DeuteriumCap": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "SmoothPlastic",
+        "Price": 16,
+        "Recipe": [
+            "Magnesium",
+            "Neodymium",
+            "Water",
+            "Water",
+            "Water",
+            "Water",
+            "Water",
+            "Water",
+            "Water",
+            "Water"
+        ],
+        "ToolTip": "Acid neutralizer and hydrogen bomb component."
+    },
+    "Diamond": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 1,
+            "Z": 1
+        },
+        "Malleability": 0,
+        "Material": "SmoothPlastic",
+        "Price": 25,
+        "ToolTip": "Extremely strong crystal."
+    },
+    "DimensionalDoor": {
+        "DefaultSize": {
+            "X": 6,
+            "Y": 8,
+            "Z": 1
+        },
+        "Malleability": 0,
+        "Material": "Neon",
+        "Price": 100,
+        "Recipe": [
+            "Lirvanite",
+            "Protalium",
+            "Titanium"
+        ],
+        "ToolTip": "Entry to a large room in another dimension."
+    },
+    "Dish": {
+        "DefaultSize": {
+            "X": 10,
+            "Y": 2,
+            "Z": 10
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 40,
+        "Recipe": [
+            "Diamond",
+            "Iron",
+            "Quartz",
+            "Silicon",
+            "Titanium"
+        ],
+        "ToolTip": "Analyzes an area, saps power, or jams wireless devices."
+    },
+    "DoorTemplate": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 6,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Material": "Concrete",
+        "Price": 1,
+        "Recipe": [
+            "Stone"
+        ],
+        "ToolTip": "Attach to a raw material to form a Door which is signaled to open/close."
+    },
+    "DriveBox": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 8,
+        "Material": "Plastic",
+        "Price": 8,
+        "Recipe": [
+            "Iron",
+            "Oil"
+        ],
+        "ToolTip": "Transfers torque from engine/motor driveshafts."
+    },
+    "Dynamite": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 4,
+            "Z": 1
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 10,
+        "Recipe": [
+            "Charcoal",
+            "Leaves",
+            "Oil",
+            "Wood"
+        ],
+        "ToolTip": "Weak explosive that gets stronger when more are put together."
+    },
+    "Egg": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 1,
+            "Z": 1
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 30,
+        "ToolTip": "Hatches when ready."
+    },
+    "EMPBomb": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 4,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 35,
+        "Recipe": [
+            "Aluminium",
+            "Copper",
+            "Gold",
+            "Neodymium"
+        ],
+        "ToolTip": "Temporarily disables power systems, even through walls."
+    },
+    "Endgame": {
+        "DefaultSize": {
+            "X": 30,
+            "Y": 60,
+            "Z": 30
+        },
+        "Malleability": 0,
+        "Material": "DiamondPlate",
+        "Price": 1250,
+        "Recipe": [
+            "Amethyst",
+            "Ashes",
+            "DeuteriumCap",
+            "Plutonium",
+            "Titanium",
+            "Warhead",
+            "Warhead",
+            "Warhead",
+            "Warhead"
+        ],
+        "ToolTip": "Starts a new map. Activated by 12 player votes."
+    },
+    "EnergyBomb": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 6,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 120,
+        "Recipe": [
+            "Aluminium",
+            "Gold",
+            "Neodymium",
+            "Ruby",
+            "Titanium",
+            "Uranium"
+        ],
+        "ToolTip": "Powerful explosive that permanently fries parts."
+    },
+    "EnergyCannon": {
+        "DefaultSize": {
+            "X": 10,
+            "Y": 3,
+            "Z": 3
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 50,
+        "Recipe": [
+            "Aluminium",
+            "Copper",
+            "Diamond",
+            "Eridanium",
+            "Gold",
+            "Jade",
+            "Titanium"
+        ],
+        "ToolTip": "Energy weapon with diverse effects. Requires power and inserted materials."
+    },
+    "EnergyShield": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 6,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 120,
+        "Recipe": [
+            "Copper",
+            "Diamond",
+            "Jade",
+            "Ruby",
+            "Uranium",
+            "Zaktralia"
+        ],
+        "ToolTip": "Creates a large shield that absorbs damage while powered."
+    },
+    "Engine": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 4
+        },
+        "Malleability": 10,
+        "Material": "Metal",
+        "Price": 10,
+        "Recipe": [
+            "Copper",
+            "Diamond",
+            "Iron"
+        ],
+        "ToolTip": "Creates torque from a Gas or Oil supply."
+    },
+    "EnrichedUranium": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 40,
+        "ToolTip": "Highly radioactive metal."
+    },
+    "Eridanium": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 2,
+            "Z": 3
+        },
+        "Malleability": 90,
+        "Material": "Marble",
+        "Price": 25,
+        "ToolTip": "Very strong and malleable, but extremely heavy space metal."
+    },
+    "ExoticMatter": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 1,
+            "Z": 1
+        },
+        "Malleability": 200,
+        "Material": "SmoothPlastic",
+        "Price": 250,
+        "ToolTip": "Very strong, negative mass substance."
+    },
+    "Explosives": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 4,
+        "Material": "Metal",
+        "Price": 25,
+        "Recipe": [
+            "Ashes",
+            "Charcoal",
+            "Sand",
+            "Sulfur",
+            "Wood"
+        ],
+        "ToolTip": "Powerful bomb."
+    },
+    "Factory": {
+        "DefaultSize": {
+            "X": 10,
+            "Y": 10,
+            "Z": 10
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 100,
+        "Recipe": [
+            "Copper",
+            "Gold",
+            "Iron",
+            "Quartz"
+        ],
+        "ToolTip": "Supplies inserted raw materials to players within 600 studs."
+    },
+    "Faucet": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 2,
+            "Z": 1
+        },
+        "Malleability": 4,
+        "Material": "Metal",
+        "Price": 5,
+        "Recipe": [
+            "Iron"
+        ],
+        "ToolTip": "Releases liquids/gases from Pipes, Valves, or Containers when active."
+    },
+    "FaxRadio": {
+        "DefaultSize": {
+            "X": 6,
+            "Y": 2,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Price": 10,
+        "ToolTip": "e mail"
+    },
+    "Filler": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 4,
+            "Z": 2
+        },
+        "Malleability": 12,
+        "Material": "Metal",
+        "Price": 14,
+        "Recipe": [
+            "Iron",
+            "Quartz",
+            "Silicon",
+            "Titanium"
+        ],
+        "ToolTip": "Automatically transfers substances to nearby Containers."
+    },
+    "Firebox": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 4,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 2,
+        "Recipe": [
+            "Flint",
+            "Iron",
+            "Quartz",
+            "Stone"
+        ],
+        "ToolTip": "Burns flammable materials safely. Provides heat."
+    },
+    "Firewood": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 6,
+        "Material": "Wood",
+        "Price": 2,
+        "Recipe": [
+            "Wood"
+        ],
+        "ToolTip": "Burns longer than unprepared Wood."
+    },
+    "Firework": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 6,
+        "Material": "Plastic",
+        "Price": 6,
+        "Recipe": [
+            "Ashes",
+            "Charcoal",
+            "Sulfur",
+            "Wood"
+        ],
+        "ToolTip": "Launches into sky and bursts when signaled/burned."
+    },
+    "FlameThrower": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 8,
+            "Z": 1
+        },
+        "Malleability": 4,
+        "Material": "Metal",
+        "Price": 12,
+        "Recipe": [
+            "Copper",
+            "Magnesium",
+            "Quartz",
+            "Titanium"
+        ],
+        "ToolTip": "Short-ranged flame weapon."
+    },
+    "Flint": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 4,
+        "Material": "Slate",
+        "Price": 4,
+        "ToolTip": "Sporadically sparks fire when rubbed against a flammable part."
+    },
+    "Flubber": {
+        "DefaultSize": {
+            "X": 3,
+            "Y": 3,
+            "Z": 3
+        },
+        "Malleability": 20,
+        "Material": "Granite",
+        "Price": 14,
+        "Recipe": [
+            "Ice",
+            "Leaves",
+            "LiquidNitrogen",
+            "Oil"
+        ],
+        "ToolTip": "Extremely bouncy and slippery."
+    },
+    "Foam": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 2,
+            "Z": 4
+        },
+        "Malleability": 30,
+        "Material": "Pebble",
+        "Price": 6,
+        "Recipe": [
+            "Acid",
+            "Ashes",
+            "Oil"
+        ],
+        "ToolTip": "Breaks into chunks from hard impacts."
+    },
+    "ForceField": {
+        "DefaultSize": {
+            "X": 10,
+            "Y": 1,
+            "Z": 10
+        },
+        "Malleability": 200,
+        "Material": "Neon",
+        "Price": 70,
+        "Recipe": [
+            "Copper",
+            "Gold",
+            "Silicon",
+            "Uranium",
+            "Zaktralia"
+        ],
+        "ToolTip": "Nearly indestructible while powered."
+    },
+    "Foundation": {
+        "DefaultSize": {
+            "X": 10,
+            "Y": 1,
+            "Z": 10
+        },
+        "Malleability": 80,
+        "Material": "Concrete",
+        "Price": 16,
+        "Recipe": [
+            "Quartz",
+            "Sand",
+            "Stone"
+        ],
+        "ToolTip": "Aligns itself as a flat, anchored platform."
+    },
+    "FuelCell": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 1,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 12,
+        "Recipe": [
+            "Aluminium", "Gold", "Copper", "Magnesium"
+        ]
+    },
+    "Funium": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 110,
+        "Material": "Cobblestone",
+        "Price": 44,
+        "ToolTip": "Incredibly heavy material."
+    },
+    "GammaDrive": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 4,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 100,
+        "Recipe": [
+            "Abantium",
+            "Diamond",
+            "Gold",
+            "Lirvanite",
+            "Protalium"
+        ],
+        "ToolTip": "Fast but inefficient spaceship engine with lower lifting force."
+    },
+    "Gear": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 10,
+        "Material": "Metal",
+        "Price": 25,
+        "Recipe": [
+            "Iron"
+        ],
+        "ToolTip": "Meshes with other Gears to transfer torque."
+    },
+    "GeigerCounter": {
+        "DefaultSize": {
+            "X": 3,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 14,
+        "Recipe": [
+            "Aluminium",
+            "Gold",
+            "Iron"
+        ],
+        "ToolTip": "Ionizing radiation detector."
+    },
+    "Gel": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 50,
+        "Material": "SmoothPlastic",
+        "Price": 8,
+        "Recipe": [
+            "Ashes",
+            "Ice",
+            "Sulfur",
+            "Wood"
+        ],
+        "ToolTip": "Malleable substance that acts as a fire suppressant."
+    },
+    "Generator": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 7,
+        "Recipe": [
+            "Copper",
+            "Gold",
+            "Iron",
+            "Quartz"
+        ],
+        "ToolTip": "Generates energy from attached fossil fuel motors."
+    },
+    "Glass": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 4,
+            "Z": 1
+        },
+        "Malleability": 64,
+        "Material": "Metal",
+        "Price": 2,
+        "ToolTip": "Transparent, weak material."
+    },
+    "GlowTube": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 6,
+        "Material": "Neon",
+        "Price": 10,
+        "Recipe": [
+            "Glass",
+            "Uranium"
+        ],
+        "ToolTip": "Emits light without electricity."
+    },
+    "Gold": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 60,
+        "Material": "Metal",
+        "Price": 16,
+        "ToolTip": "Very heavy, malleable, and expensive metal."
+    },
+    "Goo": {
+        "DefaultSize": {
+            "X": 3,
+            "Y": 1,
+            "Z": 3
+        },
+        "Malleability": 12,
+        "Material": "Metal",
+        "Price": 8,
+        "Recipe": [
+            "Ashes",
+            "Ice",
+            "Oil",
+            "Sand"
+        ],
+        "ToolTip": "Sticks to parts if at least two others connected."
+    },
+    "GraphicsCard": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 850,
+        "Recipe": [
+            "Aluminium",
+            "Gold",
+            "Neodymium",
+            "Quartz",
+            "Silicon"
+        ],
+        "ToolTip": "Enables 3D rendering on Computers."
+    },
+    "GravDevice": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 4,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 25,
+        "Recipe": [
+            "Abantium",
+            "Eridanium",
+            "Gold",
+            "Quartz"
+        ],
+        "ToolTip": "Generates an artificial gravity field in space."
+    },
+    "Gun": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 5,
+            "Z": 1
+        },
+        "Malleability": 24,
+        "Material": "Metal",
+        "Price": 10,
+        "Recipe": [
+            "Ashes",
+            "Charcoal",
+            "Ice",
+            "Magnesium",
+            "Sulfur",
+            "Titanium"
+        ],
+        "ToolTip": "Tracefire weapon. Requires inserted material and ammo supply."
+    },
+    "Gunpowder": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Slate",
+        "Price": 8,
+        "Recipe": [
+            "Ashes",
+            "Charcoal",
+            "Sulfur"
+        ],
+        "ToolTip": "Weak explosive that detonates when exposed to heat or fire."
+    },
+    "Gyro": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 8,
+        "Recipe": [
+            "Iron",
+            "Oil"
+        ],
+        "ToolTip": "Stays level while powered."
+    },
+    "Heater": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 6,
+        "Material": "Neon",
+        "Price": 3,
+        "Recipe": [
+            "Copper",
+            "Ruby"
+        ],
+        "ToolTip": "Increases temperature while powered. Use with Container to boil water."
+    },
+    "Herbicide": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 6,
+        "Recipe": [
+            "Ashes",
+            "Iron",
+            "Oil",
+            "Sulfur"
+        ],
+        "ToolTip": "Disperses and kills off artificial plant life when signaled."
+    },
+    "Horse": {
+        "DefaultSize": {
+            "X": 8,
+            "Y": 3,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Wood",
+        "Price": 50,
+        "Recipe": [
+            "Leaves",
+            "Quartz"
+        ],
+        "ToolTip": "Domesticated animal."
+    },
+    "Hull": {
+        "DefaultSize": {
+            "X": 16,
+            "Y": 4,
+            "Z": 6
+        },
+        "Malleability": 100,
+        "Material": "Metal",
+        "Price": 12,
+        "Recipe": [
+            "Aluminium",
+            "Iron",
+            "Magnesium",
+            "Titanium"
+        ],
+        "ToolTip": "Buoyant metal ship hull."
+    },
+    "Hybrid": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 8,
+        "Material": "Plastic",
+        "Price": 1,
+        "ToolTip": "Combination of two items from a Lab. Does not save."
+    },
+    "HydroGenerator": {
+        "DefaultSize": {
+            "X": 28,
+            "Y": 14,
+            "Z": 6
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 20,
+        "Recipe": [
+            "Aluminium",
+            "Copper",
+            "Iron",
+            "Oil"
+        ],
+        "ToolTip": "Generates energy from river currents."
+    },
+    "HyperDrive": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 4,
+            "Z": 10
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 60,
+        "Recipe": [
+            "Abantium",
+            "Eridanium",
+            "Gold",
+            "Lirvanite",
+            "Silicon"
+        ],
+        "ToolTip": "Warps to a specified planet when power is applied."
+    },
+    "Ice": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 26,
+        "Material": "Ice",
+        "Price": 3,
+        "ToolTip": "Slippery substance. Melted by fire."
+    },
+    "Inductor": {
+        "DefaultSize": {
+            "X": 3,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 10,
+        "Material": "Metal",
+        "Price": 14,
+        "Recipe": [
+            "Aluminium",
+            "Copper",
+            "Quartz",
+            "Silicon"
+        ],
+        "ToolTip": "Transfers power wirelessly."
+    },
+    "InertiaTrigger": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 12,
+        "Material": "Metal",
+        "Price": 4,
+        "Recipe": [
+            "Iron",
+            "Oil"
+        ],
+        "ToolTip": "Signals attached parts when there is a change in speed."
+    },
+    "Instrument": {
+        "DefaultSize": {
+            "X": 3,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 12,
+        "Material": "Metal",
+        "Price": 5,
+        "Recipe": [
+            "Copper",
+            "Glass"
+        ],
+        "ToolTip": "Displays and can signal various types of data."
+    },
+    "InsulatedWire": {
+        "DefaultSize": {
+            "X": 8,
+            "Y": 1,
+            "Z": 1
+        },
+        "Malleability": 40,
+        "Material": "Metal",
+        "Price": 5,
+        "Recipe": [
+            "Copper",
+            "Leaves",
+            "Oil"
+        ],
+        "ToolTip": "Transfers energy to parts owned by the same player."
+    },
+    "Interceptor": {
+        "DefaultSize": {
+            "X": 3,
+            "Y": 3,
+            "Z": 20
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 1000,
+        "Recipe": [
+            "Aluminium",
+            "Charcoal",
+            "Diamond",
+            "Oil",
+            "Silicon",
+            "Sulfur",
+            "Titanium"
+        ],
+        "ToolTip": "Fast missile which locks onto moving Warheads."
+    },
+    "Inverter": {
+        "DefaultSize": {
+            "X": 3,
+            "Y": 2,
+            "Z": 3
+        },
+        "Malleability": 18,
+        "Material": "Metal",
+        "Price": 5,
+        "Recipe": [
+            "Copper",
+            "Iron",
+            "Quartz"
+        ],
+        "ToolTip": "Connects multiple energy cells to a single circuit. Can transmit energy through ground."
+    },
+    "IonDrive": {
+        "DefaultSize": {
+            "X": 8,
+            "Y": 10,
+            "Z": 8
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 80,
+        "Recipe": [
+            "Eridanium",
+            "Gold",
+            "Neodymium"
+        ],
+        "ToolTip": "High-force but unwieldy spaceship engine."
+    },
+    "IonRocket": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 6,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 40,
+        "Recipe": [
+            "Gold",
+            "Magnesium",
+            "Neodymium",
+            "Titanium"
+        ],
+        "ToolTip": "Weak mid-flight spaceship engine."
+    },
+    "ICBM": {
+        "DefaultSize": {
+            "X": 6,
+            "Y": 30,
+            "Z": 6
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 400,
+        "ToolTip": "Launches a payload towards the target.",
+        "Recipe": [
+            "Titanium",
+            "Aluminium",
+            "Gold",
+            "Silicon",
+            "Charcoal"
+        ]
+    },
+    "Iron": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 14,
+        "Material": "Metal",
+        "Price": 5,
+        "ToolTip": "Strong metal."
+    },
+    "Jade": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 3
+        },
+        "Malleability": 12,
+        "Material": "Marble",
+        "Price": 20,
+        "ToolTip": "Valuable crystal that cannot be supplied by a Factory."
+    },
+    "JetPack": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 1
+        },
+        "Malleability": 0,
+        "Material": "DiamondPlate",
+        "Price": 150,
+        "Recipe": [
+            "Aluminium",
+            "Magnesium",
+            "Iron",
+            "Cotton"
+        ],
+        "ToolTip": "Allows flight and other advantages. Fueled with Gas."
+    },
+    "Keyboard": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "SmoothPlastic",
+        "Price": 4,
+        "Recipe": [
+            "Ashes",
+            "Copper",
+            "Ice",
+            "Oil"
+        ],
+        "ToolTip": "Provides input to Computers or signals to other parts."
+    },
+    "Keypad": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 3,
+            "Z": 1
+        },
+        "Malleability": 16,
+        "Material": "SmoothPlastic",
+        "Price": 4,
+        "Recipe": [
+            "Oil",
+            "Ashes",
+            "Gold",
+            "Ice"
+        ],
+        "ToolTip": "Outputs number signals when clicked or used with a seat."
+    },
+    "Lab": {
+        "DefaultSize": {
+            "X": 6,
+            "Y": 6,
+            "Z": 6
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 30,
+        "Recipe": [
+            "Copper",
+            "Gold",
+            "Neodymium",
+            "Ruby",
+            "Silicon",
+            "Sulfur"
+        ],
+        "ToolTip": "Creates experimental weapons or enriches uranium. Can also combine parts if in space."
+    },
+    "Lamp": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 2,
+            "Z": 1
+        },
+        "Malleability": 4,
+        "Material": "Plastic",
+        "Price": 2,
+        "Recipe": [
+            "Glass",
+            "Oil"
+        ],
+        "ToolTip": "Small lantern, click to light."
+    },
+    "LaserTargeter": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Glass",
+        "Price": 10,
+        "Recipe": [
+            "Copper",
+            "Glass",
+            "Ruby",
+            "Silicon"
+        ],
+        "ToolTip": "Signals mouse click position when attached to any seat."
+    },
+    "Launcher": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 5,
+            "Z": 2
+        },
+        "Malleability": 19,
+        "Material": "Metal",
+        "Price": 35,
+        "Recipe": [
+            "Aluminium",
+            "Iron",
+            "Ruby",
+            "Titanium"
+        ],
+        "ToolTip": "Advanced ballistic weapon. Requires inserted material and ammo supply."
+    },
+    "LCD": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 4,
+            "Z": 1
+        },
+        "Malleability": 30,
+        "Material": "Metal",
+        "Price": 6,
+        "Recipe": [
+            "Glass",
+            "Magnesium",
+            "Silicon"
+        ],
+        "ToolTip": "Transparent image and data display."
+    },
+    "Leaves": {
+        "DefaultSize": {
+            "X": 6,
+            "Y": 1,
+            "Z": 6
+        },
+        "Malleability": 0,
+        "Material": "Wood",
+        "Price": 1,
+        "ToolTip": "Foilage from a tree or bush."
+    },
+    "Levitator": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 10,
+        "Material": "Metal",
+        "Price": 30,
+        "Recipe": [
+            "Gold",
+            "Magnesium",
+            "Titanium",
+            "Zaktralia"
+        ],
+        "ToolTip": "Hovers while powered. Can move over water or climb walls."
+    },
+    "Lexan": {
+        "DefaultSize": {
+            "X": 6,
+            "Y": 4,
+            "Z": 1
+        },
+        "Malleability": 22,
+        "Material": "SmoothPlastic",
+        "Price": 16,
+        "Recipe": [
+            "Ashes",
+            "LiquidNitrogen",
+            "Oil",
+            "Silicon"
+        ],
+        "ToolTip": "Strong and transparent but flammable polycarbonate."
+    },
+    "Lift": {
+        "DefaultSize": {
+            "X": 5,
+            "Y": 4,
+            "Z": 1
+        },
+        "Malleability": 12,
+        "Material": "Metal",
+        "Price": 6,
+        "Recipe": [
+            "Aluminium",
+            "Iron",
+            "Silicon"
+        ],
+        "ToolTip": "Elevator that can climb a nearby wall when powered."
+    },
+    "Light": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 10,
+        "Material": "Plastic",
+        "Price": 3,
+        "Recipe": [
+            "Copper",
+            "Glass"
+        ],
+        "ToolTip": "Electric light bulb."
+    },
+    "LightningRod": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 20,
+            "Z": 1
+        },
+        "Malleability": 16,
+        "Material": "Metal",
+        "Price": 20,
+        "Recipe": [
+            "Abantium",
+            "Copper",
+            "Gold"
+        ],
+        "ToolTip": "Attracts and safely harvests lightning strikes."
+    },
+    "Lirvanite": {
+        "DefaultSize": {
+            "X": 5,
+            "Y": 2,
+            "Z": 1
+        },
+        "Malleability": 60,
+        "Material": "SmoothPlastic",
+        "Price": 30,
+        "ToolTip": "Shiny, valuable space crystal."
+    },
+    "Magnesium": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 18,
+        "Material": "Metal",
+        "Price": 8,
+        "ToolTip": "Flammable, lightweight metal."
+    },
+    "Mainspring": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 6,
+        "Material": "Metal",
+        "Price": 14,
+        "Recipe": [
+            "Copper",
+            "Iron"
+        ],
+        "ToolTip": "Clockwork torque spring, wound by touching with character."
+    },
+    "Market": {
+        "DefaultSize": {
+            "X": 8,
+            "Y": 14,
+            "Z": 8
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 75,
+        "Recipe": [
+            "Glass",
+            "Gold",
+            "Stone",
+            "Wood"
+        ],
+        "ToolTip": "Used to buy and sell Trinkets."
+    },
+    "MechLimb": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 11
+        },
+        "Malleability": 30,
+        "Material": "Metal",
+        "Price": 60,
+        "Recipe": [
+            "Copper",
+            "Iron",
+            "Quartz",
+            "Silicon",
+            "Titanium"
+        ],
+        "ToolTip": "Actuates to position signals when unpacked and powered."
+    },
+    "MemoryChip": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 12,
+        "Material": "SmoothPlastic",
+        "Price": 8,
+        "Recipe": [
+            "Copper",
+            "Silicon"
+        ],
+        "ToolTip": "Stores signal data, Computer programs, or websites."
+    },
+    "Missile": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 4,
+            "Z": 1
+        },
+        "Malleability": 4,
+        "Material": "Metal",
+        "Price": 60,
+        "Recipe": [
+            "Ashes",
+            "Charcoal",
+            "Sulfur",
+            "Titanium"
+        ],
+        "ToolTip": "Single-use solid rocket motor."
+    },
+    "Monitor": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 4,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 4,
+        "Recipe": [
+            "Copper",
+            "Glass",
+            "Iron"
+        ],
+        "ToolTip": "Displays incoming signal data or Computer video."
+    },
+    "Motor": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 3
+        },
+        "Malleability": 10,
+        "Material": "Plastic",
+        "Price": 4,
+        "Recipe": [
+            "Copper",
+            "Iron"
+        ],
+        "ToolTip": "Converts energy to torque."
+    },
+    "Neodymium": {
+        "DefaultSize": {
+            "X": 3,
+            "Y": 1,
+            "Z": 3
+        },
+        "Malleability": 8,
+        "Material": "Metal",
+        "Price": 14,
+        "ToolTip": "Valuable metal that cannot be supplied by a Factory."
+    },
+    "Node": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 4,
+            "Z": 4
+        },
+        "Malleability": 8,
+        "Material": "SmoothPlastic",
+        "Price": 10,
+        "Recipe": [
+            "Gold",
+            "Copper",
+            "Titanium"
+        ],
+        "ToolTip": "AetherGate component or WarpGate button."
+    },
+    "Oil": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "SmoothPlastic",
+        "Price": 1,
+        "ToolTip": "Flammable liquid used as fuel."
+    },
+    "Ore": {
+        "DefaultSize": {
+            "X": 3,
+            "Y": 3,
+            "Z": 3
+        },
+        "Malleability": 0,
+        "Material": "Pebble",
+        "Price": 3,
+        "ToolTip": "Insert into a Refinery to yield the pure material."
+    },
+    "OrganicMatter": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 40,
+        "Material": "SmoothPlastic",
+        "Price": 4,
+        "ToolTip": "Processed plant matter."
+    },
+    "OxygenCandle": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 4,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Foil",
+        "Price": 16,
+        "ToolTip": "Generates breathable air when signaled or set on fire."
+    },
+    "ParachutePack": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 1
+        },
+        "Malleability": 0,
+        "Material": "SmoothPlastic",
+        "Price": 14,
+        "Recipe": [
+            "Cotton",
+            "Oil",
+            "Ruby"
+        ],
+        "ToolTip": "Slows falling. Deploys on signal (or automatically when worn)."
+    },
+    "PayBox": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 4
+        },
+        "Malleability": 6,
+        "Material": "Plastic",
+        "Price": 4,
+        "Recipe": [
+            "Aluminium",
+            "Iron",
+            "Magnesium",
+            "Titanium"
+        ],
+        "ToolTip": "When clicked, transfers credits to a Bank and emits a signal."
+    },
+    "PhotonShard": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Neon",
+        "Price": 400,
+        "ToolTip": "Comet fragment that regenerates health of nearby players."
+    },
+    "Pipe": {
+        "DefaultSize": {
+            "X": 8,
+            "Y": 1,
+            "Z": 1
+        },
+        "Malleability": 40,
+        "Material": "Metal",
+        "Price": 4,
+        "Recipe": [
+            "Iron"
+        ],
+        "ToolTip": "Transfers liquids from Containers."
+    },
+    "Plant": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Wood",
+        "Price": 1,
+        "ToolTip": "Use Harvest tool to gather."
+    },
+    "Plastic": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 120,
+        "Material": "SmoothPlastic",
+        "Price": 1,
+        "Recipe": [
+            "Ashes",
+            "Ice",
+            "Oil"
+        ],
+        "ToolTip": "Very malleable, lightweight material."
+    },
+    "Plutonium": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Neon",
+        "Price": 25,
+        "ToolTip": "Highly radioactive and fissile material."
+    },
+    "Pod": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 6,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 500,
+        "ToolTip": "Unexplained treasure chest that can only be opened on Earth. Detonates if warped/teleported."
+    },
+    "PolyesterCoat": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 1
+        },
+        "Malleability": 0,
+        "Material": "SmoothPlastic",
+        "Price": 10,
+        "Recipe": [
+            "Oil",
+            "Leaves",
+            "Diamond"
+        ],
+        "ToolTip": "Adjusts temperature to a more comfortable level if worn."
+    },
+    "Polysilicon": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 1
+        },
+        "Malleability": 12,
+        "Material": "Plastic",
+        "Price": 6,
+        "Recipe": [
+            "Quartz",
+            "Silicon"
+        ],
+        "ToolTip": "Commands various part functions when signaled."
+    },
+    "PowerCell": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 30,
+        "Material": "Plastic",
+        "Price": 10,
+        "Recipe": [
+            "Ashes",
+            "Copper",
+            "Iron",
+            "Sulfur"
+        ],
+        "ToolTip": "Chargeable power source with a capacity depending on size."
+    },
+    "PowerPlant": {
+        "DefaultSize": {
+            "X": 8,
+            "Y": 6,
+            "Z": 10
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 50,
+        "Recipe": [
+            "Aluminium",
+            "Iron",
+            "Oil",
+            "Titanium"
+        ],
+        "ToolTip": "Large engine powered by any fossil fuel."
+    },
+    "ProbabilityField": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 4,
+            "Z": 1
+        },
+        "Malleability": 40,
+        "Material": "ForceField",
+        "Price": 50,
+        "Recipe": [
+            "Diamond",
+            "Gold",
+            "Zaktralia"
+        ],
+        "ToolTip": "Resists damage purely by hit rate, ignoring actual weapon power."
+    },
+    "Propeller": {
+        "DefaultSize": {
+            "X": 8,
+            "Y": 0.4000000059604645,
+            "Z": 8
+        },
+        "Malleability": 0,
+        "Material": "Wood",
+        "Price": 10,
+        "Recipe": [
+            "Flint",
+            "Iron",
+            "Oil"
+        ],
+        "ToolTip": "Applies a forward force while spinning. Only usable with engines/motors."
+    },
+    "Prospector": {
+        "DefaultSize": {
+            "X": 6,
+            "Y": 1,
+            "Z": 6
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 16,
+        "Recipe": [
+            "Aluminium",
+            "Diamond",
+            "Silicon",
+            "Titanium"
+        ],
+        "ToolTip": "Scans for underground resources when signaled."
+    },
+    "Protalium": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 4,
+            "Z": 1
+        },
+        "Malleability": 0,
+        "Material": "Ice",
+        "Price": 60,
+        "ToolTip": "Valuable, glowing power crystal that cannot be supplied by a Factory."
+    },
+    "ProtonCell": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 6,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 100,
+        "Recipe": [
+            "Abantium",
+            "Diamond",
+            "Eridanium",
+            "Gold",
+            "Neodymium"
+        ],
+        "ToolTip": "Provides energy from inserted Protalium rods."
+    },
+    "PsiButton": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 12,
+        "Material": "Metal",
+        "Price": 8,
+        "Recipe": [
+            "Copper",
+            "Eridanium",
+            "Quartz"
+        ],
+        "ToolTip": "Signals attached parts when clicked. Unlimited click distance."
+    },
+    "PulseDrive": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 14,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 100,
+        "Recipe": [
+            "Amethyst",
+            "Copper",
+            "Lirvanite"
+        ],
+        "ToolTip": "Spaceship engine with slow acceleration and variable speed."
+    },
+    "PulseJet": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 12,
+            "Z": 2
+        },
+        "Malleability": 9,
+        "Price": 100,
+        "ToolTip": "Jet engine which functions best at moderate altitudes."
+    },
+    "QuantumAntenna": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 12,
+        "Material": "SmoothPlastic",
+        "Price": 150,
+        "Recipe": [
+            "Lirvanite",
+            "Copper"
+        ],
+        "ToolTip": "Sends signals across servers."
+    },
+    "Quartz": {
+        "DefaultSize": {
+            "X": 3,
+            "Y": 3,
+            "Z": 3
+        },
+        "Malleability": 6,
+        "Material": "Concrete",
+        "Price": 4,
+        "ToolTip": "Slightly transparent mineral."
+    },
+    "Radar": {
+        "DefaultSize": {
+            "X": 12,
+            "Y": 3,
+            "Z": 12
+        },
+        "Malleability": 22,
+        "Material": "Metal",
+        "Price": 25,
+        "Recipe": [
+            "Copper",
+            "Gold",
+            "Quartz",
+            "Silicon"
+        ],
+        "ToolTip": "Displays world map and nearby objects."
+    },
+    "RadiationSuit": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 1
+        },
+        "Malleability": 0,
+        "Material": "SmoothPlastic",
+        "Price": 12,
+        "Recipe": [
+            "Ashes",
+            "Charcoal",
+            "Glass",
+            "Iron",
+            "Wood"
+        ],
+        "ToolTip": "Provides some radiation resistance if worn."
+    },
+    "Radio": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 4,
+        "Material": "Metal",
+        "Price": 14,
+        "Recipe": [
+            "Aluminium",
+            "Copper",
+            "Quartz"
+        ],
+        "ToolTip": "Sends and receives player chats."
+    },
+    "Ramjet": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 10,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 14,
+        "Recipe": [
+            "Aluminium",
+            "Iron",
+            "Jade"
+        ],
+        "ToolTip": "Fast jet engine that only functions when already in motion."
+    },
+    "Rare": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 1,
+        "ToolTip": "Pod item."
+    },
+    "Reactor": {
+        "DefaultSize": {
+            "X": 10,
+            "Y": 10,
+            "Z": 10
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 30,
+        "Recipe": [
+            "Copper",
+            "Iron",
+            "Silicon",
+            "Stone",
+            "Titanium"
+        ],
+        "ToolTip": "Converts inserted Uranium to energy."
+    },
+    "Refinery": {
+        "DefaultSize": {
+            "X": 6,
+            "Y": 6,
+            "Z": 6
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 40,
+        "Recipe": [
+            "Copper",
+            "Diamond",
+            "Iron",
+            "Quartz",
+            "Ruby"
+        ],
+        "ToolTip": "Purifies ores. Can create biofuel from Leaves if powered."
+    },
+    "RemoteSeat": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 16,
+        "Recipe": [
+            "Copper",
+            "Gold",
+            "Silicon",
+            "Wood"
+        ],
+        "ToolTip": "Remotely controlled by a SteeringSeat. Not a true seat."
+    },
+    "Resonator": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 12,
+        "Material": "SmoothPlastic",
+        "Price": 8,
+        "Recipe": [
+            "Quartz",
+            "Iron"
+        ]
+    },
+    "Respirator": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 4,
+            "Z": 2
+        },
+        "Malleability": 6,
+        "Material": "SmoothPlastic",
+        "Price": 12,
+        "Recipe": [
+            "Titanium",
+            "Gold",
+            "Charcoal"
+        ]
+    },
+    "Rocket": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 6,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 16,
+        "Recipe": [
+            "Aluminium",
+            "Titanium"
+        ],
+        "ToolTip": "Primitive spaceship engine that burns Oil."
+    },
+    "Rotor": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 46,
+            "Z": 1
+        },
+        "Malleability": 0,
+        "Material": "Wood",
+        "Price": 25,
+        "Recipe": [
+            "Aluminium",
+            "Charcoal",
+            "Iron",
+            "Ruby"
+        ],
+        "ToolTip": "Hovers at a height depending on rotational speed. Tilt to move laterally."
+    },
+    "Rubber": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 1,
+            "Z": 4
+        },
+        "Malleability": 10,
+        "Material": "Plastic",
+        "Price": 3,
+        "Recipe": [
+            "Leaves",
+            "Stone"
+        ],
+        "ToolTip": "Bouncy, high-friction material."
+    },
+    "Ruby": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 1
+        },
+        "Malleability": 3,
+        "Material": "SmoothPlastic",
+        "Price": 18,
+        "ToolTip": "Transparent gem occasionally found while rock mining."
+    },
+    "Sail": {
+        "DefaultSize": {
+            "X": 10,
+            "Y": 10,
+            "Z": 1
+        },
+        "Malleability": 70,
+        "Material": "Wood",
+        "Price": 6,
+        "Recipe": [
+            "Cotton",
+            "Wood"
+        ],
+        "ToolTip": "Turns wind speed into forward force while active."
+    },
+    "Sand": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Sand",
+        "Price": 1,
+        "ToolTip": "Powder that is burned to create Glass."
+    },
+    "Scanner": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 4,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 20,
+        "Recipe": [
+            "Iron",
+            "Copper",
+            "Silicon",
+            "Ruby"
+        ],
+        "ToolTip": "Identifies passengers and abilities of distant vehicles. Requires power."
+    },
+    "ScubaSuit": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 1
+        },
+        "Malleability": 0,
+        "Material": "SmoothPlastic",
+        "Price": 12,
+        "Recipe": [
+            "Aluminium",
+            "Ashes",
+            "Glass",
+            "Leaves"
+        ],
+        "ToolTip": "Enables breathing underwater if worn."
+    },
+    "SeaAlloy": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 40,
+        "Material": "Metal",
+        "Price": 8,
+        "Recipe": [
+            "Aluminium",
+            "Copper",
+            "Magnesium"
+        ],
+        "ToolTip": "Aluminium alloy suitable for use in submarines."
+    },
+    "SearchLight": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 6,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Material": "SmoothPlastic",
+        "Price": 20,
+        "Recipe": [
+            "Aluminium",
+            "Copper",
+            "Glass",
+            "Iron"
+        ],
+        "ToolTip": "Shines on incoming vehicles at a different elevation while powered."
+    },
+    "SeaPropeller": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 2,
+            "Z": 4
+        },
+        "Malleability": 81,
+        "Material": "SmoothPlastic",
+        "Price": 14,
+        "Recipe": [
+            "Iron",
+            "Flint",
+            "Oil"
+        ],
+        "ToolTip": "Pushes backward when spun with an engine/motor underwater."
+    },
+    "Seat": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 3,
+        "Recipe": [
+            "Wood"
+        ],
+        "ToolTip": "Secures players to objects."
+    },
+    "Seed": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 1,
+            "Z": 1
+        },
+        "Malleability": 0,
+        "Material": "Wood",
+        "Price": 2,
+        "ToolTip": "Click to grow a plant."
+    },
+    "Seeker": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 25,
+        "Recipe": [
+            "Copper",
+            "Gold",
+            "Iron",
+            "Magnesium",
+            "Quartz",
+            "Titanium"
+        ],
+        "ToolTip": "Points to a target based on attached MemoryChip info while powered."
+    },
+    "SelfDestruct": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 3,
+            "Z": 3
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 75,
+        "Recipe": [
+            "Ashes",
+            "Charcoal",
+            "Gold",
+            "Sand",
+            "Silicon",
+            "Sulfur",
+            "Wood"
+        ],
+        "ToolTip": "Obliterates a vehicle of the same owner."
+    },
+    "Sensor": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 1
+        },
+        "Malleability": 4,
+        "Material": "Plastic",
+        "Price": 10,
+        "Recipe": [
+            "Aluminium",
+            "Copper",
+            "Glass",
+            "Silicon"
+        ],
+        "ToolTip": "Scans or signals objects with a ray."
+    },
+    "Sentry": {
+        "DefaultSize": {
+            "X": 3,
+            "Y": 3,
+            "Z": 3
+        },
+
+        "Malleability": 0,
+        "Material": "SmoothPlastic",
+        "Price": 200,
+        "ToolTip": "Involved in the defenses of Rogue-claimed planets."
+    },
+    "Servo": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 10,
+        "Material": "Plastic",
+        "Price": 10,
+        "Recipe": [
+            "Copper",
+            "Iron",
+            "Magnesium",
+            "Silicon"
+        ],
+        "ToolTip": "Electric motor which turns to an angle determined by signals."
+    },
+    "Sign": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 2,
+            "Z": 1
+        },
+        "Malleability": 100,
+        "Material": "Metal",
+        "Price": 3,
+        "Recipe": [
+            "Charcoal",
+            "Copper"
+        ],
+        "ToolTip": "Displays text or images."
+    },
+    "SignalSwitch": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 12,
+        "Material": "Plastic",
+        "Price": 3,
+        "Recipe": [
+            "Silicon"
+        ],
+        "ToolTip": "Allows signals through only when active."
+    },
+    "SignalWire": {
+        "DefaultSize": {
+            "X": 8,
+            "Y": 1,
+            "Z": 1
+        },
+        "Malleability": 40,
+        "Material": "Metal",
+        "Price": 4,
+        "Recipe": [
+            "Copper"
+        ],
+        "ToolTip": "Transfers digital signals."
+    },
+    "Silicon": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 6,
+        "Material": "SmoothPlastic",
+        "Price": 5,
+        "ToolTip": "Substance used in making electronics."
+    },
+    "SingularityBomb": {
+        "DefaultSize": {
+            "X": 3,
+            "Y": 6,
+            "Z": 3
+        },
+        "Malleability": 0,
+        "Material": "Neon",
+        "Price": 200,
+        "Recipe": [
+            "Abantium",
+            "Eridanium",
+            "ExoticMatter",
+            "Gold"
+        ],
+        "ToolTip": "Releases a devastating black hole."
+    },
+    "SolarPanel": {
+        "DefaultSize": {
+            "X": 6,
+            "Y": 1,
+            "Z": 6
+        },
+        "Malleability": 40,
+        "Material": "Plastic",
+        "Price": 30,
+        "Recipe": [
+            "Glass",
+            "Gold",
+            "Quartz",
+            "Silicon"
+        ],
+        "ToolTip": "Generates energy from sunlight."
+    },
+    "SpaceSuit": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 1
+        },
+        "Malleability": 0,
+        "Material": "SmoothPlastic",
+        "Price": 20,
+        "Recipe": [
+            "Ashes",
+            "Gold",
+            "Ice",
+            "Silicon",
+            "Titanium"
+        ],
+        "ToolTip": "Enables breathing in space or underwater if worn."
+    },
+    "SpawnPoint": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 1,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 10,
+        "Recipe": [
+            "Quartz"
+        ],
+        "ToolTip": "Allows owner to spawn at its location."
+    },
+    "Speaker": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 14,
+        "Material": "Metal",
+        "Price": 6,
+        "Recipe": [
+            "Copper",
+            "Iron"
+        ],
+        "ToolTip": "Emits sound when signaled."
+    },
+    "SpeedWalk": {
+        "DefaultSize": {
+            "X": 8,
+            "Y": 1,
+            "Z": 8
+        },
+        "Malleability": 100,
+        "Material": "SmoothPlastic",
+        "Price": 12,
+        "Recipe": [
+            "Aluminium",
+            "Amethyst",
+            "Oil",
+            "Titanium"
+        ],
+        "ToolTip": "Increases player speed while powered."
+    },
+    "SpotLight": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 20,
+        "Material": "SmoothPlastic",
+        "Price": 3,
+        "Recipe": [
+            "Copper",
+            "Glass",
+            "Iron"
+        ],
+        "ToolTip": "Focused electric light."
+    },
+    "SteamEngine": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 4,
+            "Z": 6
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 8,
+        "Recipe": [
+            "Copper",
+            "Iron",
+            "Ruby"
+        ],
+        "ToolTip": "Creates torque from a Steam supply. Very heavy."
+    },
+    "Steel": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 34,
+        "Material": "Metal",
+        "Price": 7,
+        "Recipe": [
+            "Iron",
+            "Charcoal",
+            "Diamond"
+        ],
+        "ToolTip": "Strong and malleable metal."
+    },
+    "SteeringSeat": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 10,
+        "Recipe": [
+            "Wood"
+        ],
+        "ToolTip": "Enables vehicle steering by a player."
+    },
+    "StirlingEngine": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 4
+        },
+        "Malleability": 10,
+        "Price": 20,
+        "Recipe": [
+            "Copper",
+            "Iron",
+            "Gold",
+            "Glass",
+            "Leaves"
+        ],
+        "ToolTip": "Generates torque from attached heat sources."
+    },
+    "Stone": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 4,
+            "Z": 4
+        },
+        "Malleability": 16,
+        "Material": "Slate",
+        "Price": 2,
+        "ToolTip": "Building material with low malleability and medium strength."
+    },
+    "Sulfur": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 3,
+            "Z": 1
+        },
+        "Malleability": 0,
+        "Material": "Slate",
+        "Price": 8,
+        "ToolTip": "Substance that burns with a blue flame."
+    },
+    "Substation": {
+        "DefaultSize": {
+            "X": "10",
+            "Y": "6",
+            "Z": "10"
+        },
+        "Malleability": 0,
+        "Material": "Concrete",
+        "Price": 120,
+        "Recipe": [
+            "Iron",
+            "Copper",
+            "Quartz",
+            "Glass",
+            "Aluminium",
+            "Silicon"
+        ],
+        "ToolTip": "Distributes energy to Conduits through the ground."
+    },
+    "Switch": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 12,
+        "Material": "Plastic",
+        "Price": 3,
+        "Recipe": [
+            "Copper"
+        ],
+        "ToolTip": "Allows energy through only when active."
+    },
+    "Teleporter": {
+        "DefaultSize": {
+            "X": 8,
+            "Y": 2,
+            "Z": 8
+        },
+        "Malleability": 0,
+        "Material": "DiamondPlate",
+        "Price": 120,
+        "Recipe": [
+            "Diamond",
+            "Gold",
+            "Quartz",
+            "Ruby",
+            "Silicon",
+            "Zaktralia"
+        ],
+        "ToolTip": "Warps players to another Teleporter while powered."
+    },
+    "Television": {
+        "DefaultSize": {
+            "X": 3,
+            "Y": 3,
+            "Z": 3
+        },
+        "Malleability": 20,
+        "Material": "Plastic",
+        "Price": 8,
+        "Recipe": [
+            "Copper",
+            "Diamond",
+            "Glass"
+        ],
+        "ToolTip": "Displays a video feed from a Camera if powered and clicked on."
+    },
+    "Thruster": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 10,
+        "Material": "Plastic",
+        "Price": 16,
+        "Recipe": [
+            "Gas",
+            "Gold",
+            "Titanium"
+        ],
+        "ToolTip": "Applies a direct force while powered."
+    },
+    "TimeMachine": {
+        "DefaultSize": {
+            "X": 6,
+            "Y": 6,
+            "Z": 6
+        },
+        "Malleability": 0,
+        "Material": "Plastic",
+        "Price": 300,
+        "Recipe": [
+            "Abantium",
+            "Gold",
+            "Protalium",
+            "Ruby",
+            "Silicon",
+            "Titanium"
+        ],
+        "ToolTip": "Views/recovers items from the past, and sends items to the future."
+    },
+    "TintedGlass": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 4,
+            "Z": 1
+        },
+        "Malleability": 64,
+        "Material": "Metal",
+        "Price": 4,
+        "Recipe": [
+            "Aluminium",
+            "Glass"
+        ],
+        "ToolTip": "Transparent material that is opaque on one side."
+    },
+    "Titanium": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 6,
+        "Material": "Metal",
+        "Price": 10,
+        "ToolTip": "Low malleability, but very strong metal."
+    },
+    "TouchTrigger": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 12,
+        "Material": "Metal",
+        "Price": 3,
+        "Recipe": [
+            "Copper",
+            "Flint"
+        ],
+        "ToolTip": "Signals attached parts when touched by an object or player."
+    },
+    "Track": {
+        "DefaultSize": {
+            "X": 8,
+            "Y": 1,
+            "Z": 20
+        },
+        "Malleability": 57,
+        "Material": "Pebble",
+        "Price": 8,
+        "Recipe": [
+            "Iron",
+            "Stone",
+            "Wood"
+        ],
+        "ToolTip": "Rails for train Bogies to move upon. Use Bends for turns."
+    },
+    "Transmission": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 2,
+            "Z": 6
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 12,
+        "Recipe": [
+            "Iron",
+            "Oil",
+            "Titanium"
+        ],
+        "ToolTip": "Increases Bogie speed at the cost of torque."
+    },
+    "Trampoline": {
+        "DefaultSize": {
+            "X": 8,
+            "Y": 1,
+            "Z": 8
+        },
+        "Malleability": 20,
+        "Material": "Plastic",
+        "Price": 10,
+        "Recipe": [
+            "Charcoal",
+            "Diamond",
+            "Leaves",
+            "Stone"
+        ],
+        "ToolTip": "Bounces humanoids based on thickness."
+    },
+    "Transformer": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 3,
+            "Z": 2
+        },
+        "Malleability": 12,
+        "Material": "Metal",
+        "Price": 6,
+        "Recipe": [
+            "Copper",
+            "Oil"
+        ],
+        "ToolTip": "Converts energy to constant signals."
+    },
+    "Treads": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 6
+        },
+        "Malleability": 16,
+        "Material": "Metal",
+        "Price": 14,
+        "Recipe": [
+            "Copper",
+            "Iron",
+            "Titanium"
+        ],
+        "ToolTip": "Continuous tracks with high torque, powered by driveshaft links."
+    },
+    "Trinket": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "SmoothPlastic",
+        "Price": 2,
+        "ToolTip": "Unusual item obtained from the Market."
+    },
+    "Truss": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 6,
+            "Z": 2
+        },
+        "Malleability": 16,
+        "Material": "Metal",
+        "Price": 4,
+        "Recipe": [
+            "Iron"
+        ],
+        "ToolTip": "Iron girder that can be climbed."
+    },
+    "Turbofan": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 6,
+            "Z": 4
+        },
+        "Malleability": 19,
+        "Material": "Metal",
+        "Price": 18,
+        "Recipe": [
+            "Aluminium",
+            "Iron",
+            "Magnesium",
+            "Neodymium",
+            "Oil",
+            "Titanium"
+        ],
+        "ToolTip": "Jet engine powered by Gas or Oil."
+    },
+    "Turboshaft": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 6,
+            "Z": 4
+        },
+        "Malleability": 19,
+        "Material": "Metal",
+        "Price": 18,
+        "Recipe": [
+            "Aluminium",
+            "Iron",
+            "Magnesium",
+            "Neodymium",
+            "Oil",
+            "Titanium"
+        ],
+        "ToolTip": "Hinge-turning jet powered by Gas or Oil."
+    },
+    "Uranium": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 4,
+            "Z": 1
+        },
+        "Malleability": 6,
+        "Material": "Metal",
+        "Price": 24,
+        "ToolTip": "Radioactive metal that cannot be supplied by a Factory."
+    },
+    "Valve": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 1,
+            "Z": 3
+        },
+        "Malleability": 12,
+        "Material": "Plastic",
+        "Price": 6,
+        "Recipe": [
+            "Iron"
+        ],
+        "ToolTip": "Allows Container substances to flow through only when active."
+    },
+    "Warhead": {
+        "DefaultSize": {
+            "X": 4,
+            "Y": 6,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Material": "SmoothPlastic",
+        "Price": 1000,
+        "Recipe": [
+            "Aluminium",
+            "EnrichedUranium",
+            "Jade",
+            "Ruby",
+            "Silicon",
+            "Titanium",
+            "Uranium"
+        ],
+        "ToolTip": "Atomic bomb with an arming code interlock."
+    },
+    "WarpGate": {
+        "DefaultSize": {
+            "X": 30,
+            "Y": 30,
+            "Z": 2
+        },
+        "Malleability": 100,
+        "Material": "SmoothPlastic",
+        "Price": 500,
+        "Recipe": [
+            "Ruby",
+            "Titanium",
+            "Uranium",
+            "Silicon",
+            "Gold",
+            "Aluminium"
+        ],
+        "ToolTip": "Transport players and unwelded parts to the opposite server."
+    },
+    "WedgeTemplate": {
+        "DefaultSize": {
+            "X": 2,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 0,
+        "Material": "Concrete",
+        "Price": 1,
+        "Recipe": [
+            "Stone"
+        ],
+        "ToolTip": "Attach to a raw material to form a wedge."
+    },
+    "WheelTemplate": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 4,
+            "Z": 4
+        },
+        "Malleability": 0,
+        "Material": "Concrete",
+        "Price": 1,
+        "Recipe": [
+            "Stone"
+        ],
+        "ToolTip": "Attach to a raw material to form a Wheel. Rubber has best grip."
+    },
+    "Windmill": {
+        "DefaultSize": {
+            "X": 16,
+            "Y": 2,
+            "Z": 14
+        },
+        "Malleability": 0,
+        "Material": "Metal",
+        "Price": 20,
+        "Recipe": [
+            "Cotton",
+            "Iron"
+        ],
+        "ToolTip": "Harvests energy from wind."
+    },
+    "Wing": {
+        "DefaultSize": {
+            "X": 1,
+            "Y": 12,
+            "Z": 3
+        },
+        "Malleability": 30,
+        "Material": "Metal",
+        "Price": 12,
+        "Recipe": [
+            "Aluminium",
+            "Magnesium"
+        ],
+        "ToolTip": "Provides lift when moving forward."
+    },
+    "Wire": {
+        "DefaultSize": {
+            "X": 8,
+            "Y": 1,
+            "Z": 1
+        },
+        "Malleability": 40,
+        "Material": "Metal",
+        "Price": 4,
+        "Recipe": [
+            "Copper"
+        ],
+        "ToolTip": "Transfers energy from energy cells."
+    },
+    "Wood": {
+        "DefaultSize": {
+            "X": 6,
+            "Y": 2,
+            "Z": 2
+        },
+        "Malleability": 120,
+        "Material": "Wood",
+        "Price": 2,
+        "ToolTip": "Malleable and lightweight primitive material."
+    },
+    "Y": {
+        "DefaultSize": {
+            "X": 6,
+            "Y": 4,
+            "Z": 6
+        },
+        "Malleability": 1000,
+        "Material": "CrackedLava",
+        "Price": 1200,
+        "ToolTip": "Strong, light, and malleable. Ignored by contact-detecting parts."
+    },
+    "Zaktralia": {
+        "DefaultSize": {
+            "X": 6,
+            "Y": 1,
+            "Z": 2
+        },
+        "Malleability": 10,
+        "Material": "Glass",
+        "Price": 50,
+        "ToolTip": "Rare holocrystal used for postmodern technology."
+    },
+    "ZapWire": {
+        "DefaultSize": {
+            "X": 8,
+            "Y": 1,
+            "Z": 1
+        },
+        "Malleability": 40,
+        "Material": "Metal",
+        "Price": 6,
+        "Recipe": [
+            "Copper",
+            "Titanium"
+        ],
+        "ToolTip": "Shocks players and burns flammable parts while powered."
+    }
+}
