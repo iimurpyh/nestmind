@@ -25,6 +25,8 @@ const regexArticleFooter = /(?<=\n\n)(?:\n?.+?:.+?)+(?=\n$)/g;
 
 const regexAlphabeticCharacters = /[a-zA-Z]/g;
 
+const regexNumericCharacters = /[0-9]/g;
+
 const regexParentheticalPhrase = / *\([^)]*\) */;
 
 const partsData = JSON.parse(fs.readFileSync('./scarlet-skies-data/parts.json'));
@@ -114,7 +116,7 @@ function shouldArticleLineEndBeStripped(line) {
 
 function shouldArticleLineBeBold(line) {
     const lineNoParenPhrase = line.replace(regexParentheticalPhrase, '');
-    return regexAlphabeticCharacters.test(line) && lineNoParenPhrase.toUpperCase() === lineNoParenPhrase;
+    return regexAlphabeticCharacters.test(line) && !regexNumericCharacters.test(line) && lineNoParenPhrase.toUpperCase() === lineNoParenPhrase;
 }
 
 function roundNumber(number) {
